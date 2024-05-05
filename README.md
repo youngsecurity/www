@@ -2,9 +2,7 @@
 
 ## **Cybersecurity and Information Assurance**
 
-We are migrating from WordPress to GitHub. 
-
-Pardon the dust. 
+Thank you for your patience, and pardon the dust while we migrate from WordPress to GitHub web hosting.
 
 # Schedule a free consultation
 
@@ -26,7 +24,7 @@ Cybersecurity consulting is more than giving advice; it is about transparency, t
 
 ## **Ransomware Protection and Mitigation**
 
-At Young Security, Inc., we have a friendly and approachable team of cybersecurity professionals who will guide you through the process of protecting and mitigating ransomware resulting from various circumstances.
+At Young Security, Inc., our friendly and approachable team of cybersecurity professionals will guide you through protecting and mitigating ransomware resulting from various circumstances.
 
 ## **Security Awareness Training**
 
@@ -36,12 +34,3 @@ We represent individuals, families, and businesses who require guidance through 
 
 Our expertise is in all areas of cybersecurity and information assurance. We provide our clients with expert security operations and compliance consultation in every situation.
 
-<div>
-
-
-</div>
-
-<footer>
-
- 
-</footer>
