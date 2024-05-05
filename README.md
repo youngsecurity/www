@@ -6,11 +6,9 @@ Thank you for your patience, and pardon the dust while we migrate from WordPress
 
 # Schedule a free consultation
 
-Contact Information
+For more information, send us an email at [joe@youngsecurity.net](mailto:joe@youngsecurity.net)
 
-joe@youngsecurity.net
-
-+1 813 515 0553
+Or give us a call at <a href="tel:18135150553">+1 (813) 515-0553</a>
 
 # About us
 
