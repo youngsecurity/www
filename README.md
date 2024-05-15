@@ -1,15 +1,15 @@
 # [Young Security Inc](https://youngsecurityinc.wordpress.com/)
 
-# Mission
+## Mission
 
 To provide resilient cybersecurity and infrastructure services.
 
-# Services
+## Services
 
 - Identity and Access Management
 - Disaster Recovery & Data Protection
 - DevSecOps & Application Security
-- Observability & Logging 
+- Observability & Logging
 - Incident Response & Business Continuity
 
 ### Ransomware Protection and Mitigation
@@ -24,7 +24,7 @@ We represent individuals, families, and businesses who require guidance through 
 
 Our expertise is in all areas of cybersecurity and information assurance. We provide our clients with expert security operations and compliance consultation in every situation.
 
-# How we achieve success
+## How we achieve success
 
 - Identify the stakeholders and document the business objectives.
 - Determine who and what needs access to critical resources.
@@ -37,7 +37,7 @@ Our expertise is in all areas of cybersecurity and information assurance. We pro
 4. Develop security solutions to match the organization's service value system.
 5. Monitor security posture strength and resiliency through feedback loops and continuous improvement projects.
 
-# About us
+## About us
 
 At Young Security, Inc., we are committed to providing our clients with the highest level of service and the best possible outcomes. We take the time to develop a close relationship and understand each client’s unique cybersecurity needs. We pride ourselves on prompt, clear, and efficient communication. We always strive to deliver creative, practical solutions to our client’s cybersecurity issues.
 
@@ -45,7 +45,7 @@ We have over 20 years of experience providing exceptional cybersecurity services
 
 Cybersecurity consulting is more than giving advice; it is about transparency, training, and technology. Young Security, Inc. provides honest guidance on issuing an Information Assurance regime for an organization to protect their information assets, data, and systems on which the data is stored, processed, and transmitted. We succeed by assessing threats to information systems, analyzing the vulnerabilities that those threats might exploit, understanding the impact of identified risks, and applying technical and non-technical countermeasures to reduce those risks to an acceptable level for the business.
 
-# Schedule a free consultation
+## Schedule a free consultation
 
 For more information, send us an email at [joe@youngsecurity.net](mailto:joe@youngsecurity.net)
 
