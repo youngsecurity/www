@@ -2,8 +2,6 @@
 layout: default
 ---
 
-# Young Security Inc
-
 ## Mission
 
 To provide resilient cybersecurity and infrastructure services.
