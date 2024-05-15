@@ -36,18 +36,16 @@ Our expertise is in all areas of cybersecurity and information assurance. We pro
 
 # How we achieve success
 
-
-
 - Identify the stakeholders and document the business objectives.
 - Determine who and what needs access to critical resources.
 - Work from the inside out, starting with securing critical resources to make them resilient.
-- Inspect and log all traffic using risk-based assessments of critical resources
+- Inspect and log all traffic using risk-based assessments of critical resources.
 
 1. Define manageable Protect Surfaces around applications and workloads by segmenting the larger attack surface.
-2. Using Map all transaction flows for observability, logging, SIEM, and SOAR
-3. Create software-defined access policies for continuous identity verification
-4. Develop security solutions to match the organization's service value system
-5. Monitor and maintain strength and resiliency through feedback loops and continuous improvement projects
+2. Using multi-agent RAG, we analyze and map all transaction flows for observability, logging, SIEM, and SOAR.
+3. Create access policies for continuous identity verification.
+4. Develop security solutions to match the organization's service value system.
+5. Monitor security posture strength and resiliency through feedback loops and continuous improvement projects.
 
 # Schedule a free consultation
 
