@@ -1,18 +1,6 @@
-# [Young Security Inc](https://youngsecurityinc.wordpress.com/)
-
-Cybersecurity and Information Assurance
-
 # Mission
 
 To provide resilient cybersecurity and infrastructure services.
-
-# About us
-
-At Young Security, Inc., we are committed to providing our clients with the highest level of service and the best possible outcomes. We take the time to develop a close relationship and understand each client’s unique cybersecurity needs. We pride ourselves on prompt, clear, and efficient communication. We always strive to deliver creative, practical solutions to our client’s cybersecurity issues.
-
-We have over 20 years of experience providing exceptional cybersecurity services to individuals and businesses. We offer a range of security, network, and infrastructure operations, application security, application performance monitoring, cybersecurity, and information assurance services.
-
-Cybersecurity consulting is more than giving advice; it is about transparency, training, and technology. Young Security, Inc. provides honest guidance on issuing an Information Assurance regime for an organization to protect their information assets, data, and systems on which the data is stored, processed, and transmitted. We succeed by assessing threats to information systems, analyzing the vulnerabilities that those threats might exploit, understanding the impact of identified risks, and applying technical and non-technical countermeasures to reduce those risks to an acceptable level for the business.
 
 # Services
 
@@ -46,6 +34,14 @@ Our expertise is in all areas of cybersecurity and information assurance. We pro
 3. Create access policies for continuous identity verification.
 4. Develop security solutions to match the organization's service value system.
 5. Monitor security posture strength and resiliency through feedback loops and continuous improvement projects.
+
+# About us
+
+At Young Security, Inc., we are committed to providing our clients with the highest level of service and the best possible outcomes. We take the time to develop a close relationship and understand each client’s unique cybersecurity needs. We pride ourselves on prompt, clear, and efficient communication. We always strive to deliver creative, practical solutions to our client’s cybersecurity issues.
+
+We have over 20 years of experience providing exceptional cybersecurity services to individuals and businesses. We offer a range of security, network, and infrastructure operations, application security, application performance monitoring, cybersecurity, and information assurance services.
+
+Cybersecurity consulting is more than giving advice; it is about transparency, training, and technology. Young Security, Inc. provides honest guidance on issuing an Information Assurance regime for an organization to protect their information assets, data, and systems on which the data is stored, processed, and transmitted. We succeed by assessing threats to information systems, analyzing the vulnerabilities that those threats might exploit, understanding the impact of identified risks, and applying technical and non-technical countermeasures to reduce those risks to an acceptable level for the business.
 
 # Schedule a free consultation
 
