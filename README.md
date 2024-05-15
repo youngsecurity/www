@@ -1,4 +1,4 @@
-# [Young Security Inc](https://youngsecurityinc.wordpress.com/)
+# Young Security Inc
 
 ## Mission
 
@@ -26,10 +26,14 @@ Our expertise is in all areas of cybersecurity and information assurance. We pro
 
 ## How we achieve success
 
+### Four design principles
+
 - Identify the stakeholders and document the business objectives.
 - Determine who and what needs access to critical resources.
 - Work from the inside out, starting with securing critical resources to make them resilient.
 - Inspect and log all traffic using risk-based assessments of critical resources.
+
+### Five-step methodology
 
 1. Define manageable Protect Surfaces around applications and workloads by segmenting the larger attack surface.
 2. Using multi-agent RAG, we analyze and map all transaction flows for observability, logging, SIEM, and SOAR.
@@ -41,9 +45,7 @@ Our expertise is in all areas of cybersecurity and information assurance. We pro
 
 At Young Security, Inc., we are committed to providing our clients with the highest level of service and the best possible outcomes. We take the time to develop a close relationship and understand each client’s unique cybersecurity needs. We pride ourselves on prompt, clear, and efficient communication. We always strive to deliver creative, practical solutions to our client’s cybersecurity issues.
 
-We have over 20 years of experience providing exceptional cybersecurity services to individuals and businesses. We offer a range of security, network, and infrastructure operations, application security, application performance monitoring, cybersecurity, and information assurance services.
-
-Cybersecurity consulting is more than giving advice; it is about transparency, training, and technology. Young Security, Inc. provides honest guidance on issuing an Information Assurance regime for an organization to protect their information assets, data, and systems on which the data is stored, processed, and transmitted. We succeed by assessing threats to information systems, analyzing the vulnerabilities that those threats might exploit, understanding the impact of identified risks, and applying technical and non-technical countermeasures to reduce those risks to an acceptable level for the business.
+We have over 20 years of experience providing exceptional cybersecurity services to individuals and businesses. At Young Security, cybersecurity consulting is more than giving advice; it is about transparency, training, and technology.
 
 ## Schedule a free consultation
 
