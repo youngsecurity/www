@@ -2,122 +2,57 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+# Young Security Inc
 
-[Link to another page](./another-page.html).
+## Mission
 
-There should be whitespace between paragraphs.
+To provide resilient cybersecurity and infrastructure services.
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+## Services
 
-# Header 1
+- Identity and Access Management
+- Disaster Recovery & Data Protection
+- DevSecOps & Application Security
+- Observability & Logging
+- Incident Response & Business Continuity
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+### Ransomware Protection and Mitigation
 
-## Header 2
+At Young Security, Inc., our friendly and approachable team of cybersecurity professionals will guide you through protecting and mitigating ransomware resulting from various circumstances.
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+### Security Awareness Training
 
-### Header 3
+We represent individuals, families, and businesses who require guidance through the complexities of cybersecurity. We assist with measurable security awareness training that garners results.
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+### Security Operations and Compliance
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+Our expertise is in all areas of cybersecurity and information assurance. We provide our clients with expert security operations and compliance consultation in every situation.
 
-#### Header 4
+## How we achieve success
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+### Four design principles
 
-##### Header 5
+- Identify the stakeholders and document the business objectives.
+- Determine who and what needs access to critical resources.
+- Work from the inside out, starting with securing critical resources to make them resilient.
+- Inspect and log all traffic using risk-based assessments of critical resources.
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+### Five-step methodology
 
-###### Header 6
+1. Define manageable Protect Surfaces around applications and workloads by segmenting the larger attack surface.
+2. Using multi-agent RAG, we analyze and map all transaction flows for observability, logging, SIEM, and SOAR.
+3. Create access policies for continuous identity verification.
+4. Develop security solutions to match the organization's service value system.
+5. Monitor security posture strength and resiliency through feedback loops and continuous improvement projects.
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+## About us
 
-### There's a horizontal rule below this.
+At Young Security, Inc., we are committed to providing our clients with the highest level of service and the best possible outcomes. We take the time to develop a close relationship and understand each client’s unique cybersecurity needs. We pride ourselves on prompt, clear, and efficient communication. We always strive to deliver creative, practical solutions to our client’s cybersecurity issues.
 
-* * *
+We have over 20 years of experience providing exceptional cybersecurity services to individuals and businesses. At Young Security, cybersecurity consulting is more than giving advice; it is about transparency, training, and technology.
 
-### Here is an unordered list:
+## Schedule a free consultation
 
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
+For more information, send us an email at [joe@youngsecurity.net](mailto:joe@youngsecurity.net)
 
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+Or give us a call at <a href="tel:18135150553">+1 (813) 515-0553</a>
