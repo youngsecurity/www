@@ -1,8 +1,6 @@
 ---
 layout: default
 ---
-#
-
 ## Mission
 
 To provide resilient cybersecurity and infrastructure services.
