@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+#
 
 ## Mission
 
@@ -52,5 +53,3 @@ We have over 20 years of experience providing exceptional cybersecurity services
 ## Schedule a free consultation
 
 For more information, send us an email at [joe@youngsecurity.net](mailto:joe@youngsecurity.net)
-
-Or give us a call at <a href="tel:18135150553">+1 (813) 515-0553</a>
