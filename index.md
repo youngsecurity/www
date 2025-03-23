@@ -24,6 +24,9 @@ To provide resilient IT, cybersecurity and infrastructure services.
 
 ## Services
 
+- Agentic Frameworks and Workflow Automation
+  - LLM-Based Multi-Agent Systems
+  - Young Security are Co-founders of the [Agentics Foundation](https://agentics.org)
 - Zero Trust Guidance
   - Microsoft Azure Copilot Agent
     - [Zee Tee](./zeetee.md)
@@ -36,7 +39,9 @@ To provide resilient IT, cybersecurity and infrastructure services.
     - [Pentest-Agent-System](./pentest-agent-system.md)
   - Identity and Access Management  
   - Disaster Recovery & Data Protection  
-  - DevSecOps & Application Security  
+  - DevSecOps & Application Security
+    - [![pages-build-deployment](https://github.com/youngsecurity/www/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/youngsecurity/www/actions/workflows/pages/pages-build-deployment)
+    - [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/youngsecurity/containment-field/badge)](https://securityscorecards.dev/viewer/?uri=github.com/youngsecurity/containment-field)
   - Observability & Logging  
   - Incident Response & Business Continuity
 
@@ -58,10 +63,8 @@ At Young Security, Inc., we are committed to providing our clients with the high
 
 We have over 25 years of experience providing exceptional cybersecurity services to individuals and businesses. At Young Security, cybersecurity consulting is more than giving advice; it is about transparency, training, and technology.
 
+[LinkedIn](https://linkedin.com/in/josephwyoung) | [GitHub](https://github.com/youngsecurity) | [X](https://x.com/Y0UNGSECURITY) | Reddit | YouTube
+
 ## Schedule a free consultation
 
 For more information, send us an email at [joe@youngsecurity.net](mailto:joe@youngsecurity.net)
-
-[![pages-build-deployment](https://github.com/youngsecurity/www/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/youngsecurity/www/actions/workflows/pages/pages-build-deployment)
-
-[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/youngsecurity/containment-field/badge)](https://securityscorecards.dev/viewer/?uri=github.com/youngsecurity/containment-field)
