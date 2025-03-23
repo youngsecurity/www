@@ -63,3 +63,5 @@ We have over 25 years of experience providing exceptional cybersecurity services
 For more information, send us an email at [joe@youngsecurity.net](mailto:joe@youngsecurity.net)
 
 [![pages-build-deployment](https://github.com/youngsecurity/www/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/youngsecurity/www/actions/workflows/pages/pages-build-deployment)
+
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/youngsecurity/containment-field/badge)](https://securityscorecards.dev/viewer/?uri=github.com/youngsecurity/containment-field)
