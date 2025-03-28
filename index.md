@@ -33,7 +33,7 @@ To provide resilient IT, cybersecurity and infrastructure services.
   - OpenAI GPT Builder
     - [Zee Tee GPT](https://chatgpt.com/g/g-rYUbw9W5H-zee-tee-gpt)
     - [Jack Kinderbot](https://chatgpt.com/g/g-M6RteJ4ug-jack-kinderbot-a-zero-trust-strategy-assistant)
-- [Containment Field](https://github.com/youngsecurity/)
+- [Containment Field](https://github.com/youngsecurity/containment-field/)
   - AI Security  
   - Agentics: LLM-based Multi-Agent Solutions
     - [Pentest-Agent-System](./pentest-agent-system.md)
@@ -63,6 +63,6 @@ At Young Security, Inc., we are committed to providing our clients with the high
 
 We have over 25 years of experience providing exceptional cybersecurity services to individuals and businesses. At Young Security, cybersecurity consulting is more than giving advice; it is about transparency, training, and technology.
 
-[LinkedIn](https://linkedin.com/in/josephwyoung) | [GitHub](https://github.com/youngsecurity) | [X](https://x.com/Y0UNGSECURITY) | Reddit | YouTube
+[LinkedIn](https://linkedin.com/in/josephwyoung) | [GitHub](https://github.com/youngsecurity) | [X](https://x.com/Y0UNGSECURITY) | Reddit | [YouTube](https://www.youtube.com/@YoungSecurity)
 
 ## Schedule a free consultation
