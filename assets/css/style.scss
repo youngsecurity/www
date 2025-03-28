@@ -4,9 +4,96 @@
 @import "{{ site.theme }}";
 
 .centered {
-    text-align: center; /* Center the image horizontally */
+  text-align: center; /* Center the image horizontally */
+}
+
+.centered img {
+  display: inline-block; /* Ensures the image is treated as a block-level element for better alignment */
+}
+
+/* Sidebar and TOC styles */
+.container {
+  display: flex;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.sidebar {
+  width: 280px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-right: 1px solid #e8e8e8;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem 6rem;
+  word-wrap: break-word;
+}
+
+.toc h2 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #159957;
+}
+
+.toc-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.toc-item {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.toc-item a {
+  color: #606c71;
+  text-decoration: none;
+}
+
+.toc-item a:hover {
+  color: #159957;
+  text-decoration: underline;
+}
+
+.toc-h3 {
+  margin-left: 1rem;
+}
+
+.toc-h4 {
+  margin-left: 2rem;
+}
+
+.toc-h5 {
+  margin-left: 3rem;
+}
+
+.toc-h6 {
+  margin-left: 4rem;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
   }
   
-  .centered img {
-    display: inline-block; /* Ensures the image is treated as a block-level element for better alignment */
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-right: none;
+    border-bottom: 1px solid #e8e8e8;
   }
+  
+  .main-content {
+    padding: 2rem;
+  }
+}
