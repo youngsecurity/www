@@ -1,6 +1,11 @@
 ---
 ---
 @use "{{ site.theme }}";
+@use "variables" as *;
+
+.navbar {
+  color: $clr-primary-a0;
+}
 
 .centered {
   text-align: center; /* Center the image horizontally */
