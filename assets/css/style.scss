@@ -19,7 +19,7 @@
 }
 
 .sidebar {
-  width: 560px; /* default 280px; */
+  width: 280px;
   padding: 20px;
   background-color: #181a1b; /* default #f8f8f8 */
   border-right: 1px solid #e8e8e8;
@@ -88,7 +88,7 @@
   .sidebar {
     width: 100%;
     height: auto;
-    position: relative;
+    position: sticky;
     border-right: none;
     border-bottom: 1px solid #e8e8e8;
   }
