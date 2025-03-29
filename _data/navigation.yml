@@ -1,7 +1,7 @@
 - name: Home
   link: /
 - name: Blog
-  link: /
+  link: /blog/
 - name: Agents
   link: https://llm.youngsecurity.net/
 - name: Pentest Agent System
