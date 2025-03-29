@@ -36,7 +36,7 @@ To provide resilient IT, cybersecurity and infrastructure services.
 - [Containment Field](https://github.com/youngsecurity/containment-field/)
   - AI Security  
   - Agentics: LLM-based Multi-Agent Solutions
-    - [Pentest-Agent-System](./pentest-agent-system.md)
+    - [Pentest-Agent-System](./pentest-agent-system/)
   - Identity and Access Management  
   - Disaster Recovery & Data Protection  
   - DevSecOps & Application Security

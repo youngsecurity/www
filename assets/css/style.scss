@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+@use "{{ site.theme }}";
 
 .centered {
   text-align: center; /* Center the image horizontally */
