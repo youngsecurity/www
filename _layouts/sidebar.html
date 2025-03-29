@@ -28,7 +28,12 @@
     </header>
 
     <div class="container">
-      <div class="sidebar">
+      <button id="toc-toggle" class="toc-toggle" aria-label="Toggle Table of Contents">
+        <span class="toc-toggle-icon"></span>
+        <span class="toc-toggle-text">Contents</span>
+      </button>
+      
+      <div class="sidebar" id="sidebar">
         <div class="toc" id="toc">
           <!-- Table of contents will be generated here by JavaScript -->
           <h2>Table of Contents</h2>
@@ -57,40 +62,138 @@
         const content = document.querySelector('.main-content');
         const headings = content.querySelectorAll('h2, h3, h4, h5, h6');
         const tocContent = document.getElementById('toc-content');
+        const tocToggle = document.getElementById('toc-toggle');
+        const sidebar = document.getElementById('sidebar');
         
-        // Create the TOC
-        const toc = document.createElement('ul');
-        toc.className = 'toc-list';
-        
-        headings.forEach(function(heading) {
-          // Skip the TOC heading itself if it exists
-          if (heading.textContent.trim() === 'Table of Contents') {
-            return;
-          }
+        // Toggle TOC visibility
+        tocToggle.addEventListener('click', function() {
+          sidebar.classList.toggle('active');
+          tocToggle.classList.toggle('active');
           
-          // Create a unique ID for the heading if it doesn't have one
-          if (!heading.id) {
-            heading.id = heading.textContent.trim().toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-');
-          }
-          
-          // Create the list item
-          const li = document.createElement('li');
-          li.className = 'toc-item toc-' + heading.tagName.toLowerCase();
-          
-          // Create the link
-          const a = document.createElement('a');
-          a.href = '#' + heading.id;
-          a.textContent = heading.textContent;
-          
-          // Add the link to the list item
-          li.appendChild(a);
-          
-          // Add the list item to the TOC
-          toc.appendChild(li);
+          // Update aria-expanded attribute for accessibility
+          const isExpanded = sidebar.classList.contains('active');
+          tocToggle.setAttribute('aria-expanded', isExpanded);
         });
         
-        // Add the TOC to the page
-        tocContent.appendChild(toc);
+        // Create hierarchical TOC structure
+        const createHierarchicalToc = function(headings) {
+          // Create the main TOC list
+          const toc = document.createElement('ul');
+          toc.className = 'toc-list';
+          
+          // Track the current parent elements for each heading level
+          const parentStack = {
+            h2: toc,
+            h3: null,
+            h4: null,
+            h5: null,
+            h6: null
+          };
+          
+          // Process each heading
+          headings.forEach(function(heading) {
+            // Skip the TOC heading itself if it exists
+            if (heading.textContent.trim() === 'Table of Contents') {
+              return;
+            }
+            
+            // Create a unique ID for the heading if it doesn't have one
+            if (!heading.id) {
+              heading.id = heading.textContent.trim().toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-');
+            }
+            
+            const headingLevel = heading.tagName.toLowerCase();
+            
+            // Create the list item
+            const li = document.createElement('li');
+            li.className = 'toc-item toc-' + headingLevel;
+            
+            // Create the link
+            const a = document.createElement('a');
+            a.href = '#' + heading.id;
+            a.textContent = heading.textContent;
+            
+            // For headings that can have children (h2-h5), add expand/collapse functionality
+            if (headingLevel !== 'h6') {
+              // Create a wrapper for the heading to hold the toggle and link
+              const headingWrapper = document.createElement('div');
+              headingWrapper.className = 'toc-heading-wrapper';
+              
+              // Create toggle button for expandable sections
+              const toggle = document.createElement('span');
+              toggle.className = 'toc-toggle-btn';
+              toggle.innerHTML = '<span class="toc-toggle-icon"></span>';
+              toggle.setAttribute('aria-label', 'Toggle section');
+              
+              // Add the toggle and link to the wrapper
+              headingWrapper.appendChild(toggle);
+              headingWrapper.appendChild(a);
+              
+              // Add the wrapper to the list item
+              li.appendChild(headingWrapper);
+              
+              // Create a new sublist for this heading's children
+              const sublist = document.createElement('ul');
+              sublist.className = 'toc-sublist';
+              li.appendChild(sublist);
+              
+              // Set this sublist as the parent for the next level
+              parentStack[headingLevel === 'h2' ? 'h3' : 
+                          headingLevel === 'h3' ? 'h4' : 
+                          headingLevel === 'h4' ? 'h5' : 'h6'] = sublist;
+              
+              // Add click handler for toggle
+              toggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                li.classList.toggle('expanded');
+                toggle.setAttribute('aria-expanded', li.classList.contains('expanded'));
+              });
+            } else {
+              // For h6 (deepest level), just add the link
+              li.appendChild(a);
+            }
+            
+            // Add the list item to the appropriate parent
+            if (headingLevel === 'h2') {
+              toc.appendChild(li);
+            } else if (parentStack[headingLevel]) {
+              parentStack[headingLevel].appendChild(li);
+            } else {
+              // If parent doesn't exist (e.g., h4 without h3), add to the closest parent
+              for (let i = parseInt(headingLevel.charAt(1)) - 1; i >= 2; i--) {
+                const parentLevel = 'h' + i;
+                if (parentStack[parentLevel]) {
+                  parentStack[parentLevel].appendChild(li);
+                  break;
+                }
+              }
+            }
+          });
+          
+          return toc;
+        };
+        
+        // Create and add the hierarchical TOC
+        const hierarchicalToc = createHierarchicalToc(headings);
+        tocContent.appendChild(hierarchicalToc);
+        
+        // Expand the first level by default
+        const firstLevelItems = tocContent.querySelectorAll('.toc-h2');
+        firstLevelItems.forEach(item => {
+          item.classList.add('expanded');
+          const toggle = item.querySelector('.toc-toggle-btn');
+          if (toggle) {
+            toggle.setAttribute('aria-expanded', 'true');
+          }
+        });
+        
+        // Initially hide the sidebar on mobile
+        if (window.innerWidth < 800) {
+          sidebar.classList.remove('active');
+        } else {
+          sidebar.classList.add('active');
+          tocToggle.classList.add('active');
+        }
       });
     </script>
   </body>
