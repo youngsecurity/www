@@ -193,3 +193,4 @@ vendor/gems/
 vendor/ruby/
 
 # Note: Gemfile.lock is intentionally NOT ignored as it should be committed for Jekyll projects
+
