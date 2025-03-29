@@ -33,7 +33,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: $body-text-color;
-  background-color: #181a1b;
+  background-color: $clr-surface-a10;
 }
 
 #skip-to-content {
@@ -67,15 +67,15 @@ a {
   display: inline-block;
   margin-bottom: 1rem;
   color: rgba(255, 255, 255, 0.7);
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
+  background-color: $clr-surface-a10;
+  border-color: $clr-surface-a20;
   border-style: solid;
   border-width: 1px;
   border-radius: 0.3rem;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 
   &:hover {
-    color: rgba(255, 255, 255, 0.8);
+    color: $clr-primary-a0;
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0.2);
     border-color: rgba(255, 255, 255, 0.3);

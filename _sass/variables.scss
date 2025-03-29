@@ -22,3 +22,39 @@ $code-text-color: #567482 !default;
 $border-color: #dce6f0 !default;
 $table-border-color: #e9ebec !default;
 $hr-border-color: #eff0f1 !default;
+
+/** Base colors */
+$clr-dark-a0: #000000;
+$clr-light-a0: #ffffff;
+
+/** Theme primary colors */
+$clr-primary-a0: #00ff00;
+$clr-primary-a10: #52ff3f;
+$clr-primary-a20: #75ff5e;
+$clr-primary-a30: #8fff78;
+$clr-primary-a40: #a6ff90;
+$clr-primary-a50: #baffa7;
+
+/** Theme surface colors */
+$clr-surface-a0: #050d06;
+$clr-surface-a10: #202421;
+$clr-surface-a20: #373b38;
+$clr-surface-a30: #505451;
+$clr-surface-a40: #6b6e6b;
+$clr-surface-a50: #878987;
+
+/** Theme tonal surface colors */
+$clr-surface-tonal-a0: #122210;
+$clr-surface-tonal-a10: #283726;
+$clr-surface-tonal-a20: #3f4d3d;
+$clr-surface-tonal-a30: #586456;
+$clr-surface-tonal-a40: #717c70;
+$clr-surface-tonal-a50: #8c958a;
+
+
+/** Examples 
+.bg-primary {
+    color: $clr-primary-a50;
+    background-color: $clr-surface-a0;
+}
+*/
