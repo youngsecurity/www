@@ -40,10 +40,10 @@ To provide resilient IT, cybersecurity and infrastructure services.
   - Identity and Access Management  
   - Disaster Recovery & Data Protection  
   - DevSecOps & Application Security
-    - ![dependabot](https://flat.badgen.net/dependabot/user/repo?icon=dependabot)
     - [![pages-build-deployment](https://github.com/youngsecurity/www/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/youngsecurity/www/actions/workflows/pages/pages-build-deployment)
     - [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/youngsecurity/containment-field/badge)](https://securityscorecards.dev/viewer/?uri=github.com/youngsecurity/containment-field)
-  - Observability & Logging  
+    - ![dependabot](https://flat.badgen.net/dependabot/user/repo?icon=dependabot)
+  - Observability & Logging
   - Incident Response & Business Continuity
 
 ### Ransomware Protection and Mitigation
