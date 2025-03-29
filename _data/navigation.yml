@@ -1,0 +1,12 @@
+- name: Home
+  link: /
+- name: Blog
+  link: /
+- name: Agents
+  link: https://llm.youngsecurity.net/
+- name: Pentest Agent System
+  link: /pentest-agent-system/
+- name: Members
+  link: /members/
+- name: About
+  link: /about-us/
