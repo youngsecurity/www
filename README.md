@@ -29,17 +29,18 @@ To provide resilient IT, cybersecurity and infrastructure services.
   - Young Security are Co-founders of the [Agentics Foundation](https://agentics.org)
 - Zero Trust Guidance
   - Microsoft Azure Copilot Agent
-    - [Zee Tee](./zeetee.md)
+    - [Zee Tee](https://youngsecurity.net/zeetee/)
   - OpenAI GPT Builder
     - [Zee Tee GPT](https://chatgpt.com/g/g-rYUbw9W5H-zee-tee-gpt)
     - [Jack Kinderbot](https://chatgpt.com/g/g-M6RteJ4ug-jack-kinderbot-a-zero-trust-strategy-assistant)
-- [Containment Field](https://github.com/youngsecurity/)
+- [Containment Field](https://github.com/youngsecurity/containment-field/)
   - AI Security  
   - Agentics: LLM-based Multi-Agent Solutions
-    - [Pentest-Agent-System](./pentest-agent-system.md)
+    - [Pentest-Agent-System](https://youngsecurity.net/pentest-agent-system/)
   - Identity and Access Management  
   - Disaster Recovery & Data Protection  
   - DevSecOps & Application Security
+    - ![dependabot](https://img.shields.io/badge/any_text-you_like-blue)
     - [![pages-build-deployment](https://github.com/youngsecurity/www/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/youngsecurity/www/actions/workflows/pages/pages-build-deployment)
     - [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/youngsecurity/containment-field/badge)](https://securityscorecards.dev/viewer/?uri=github.com/youngsecurity/containment-field)
   - Observability & Logging  
@@ -62,7 +63,5 @@ Our expertise is in all areas of cybersecurity and information assurance. We pro
 At Young Security, Inc., we are committed to providing our clients with the highest level of service and the best possible outcomes. We take the time to develop a close relationship and understand each client’s unique cybersecurity needs. We pride ourselves on prompt, clear, and efficient communication. We always strive to deliver creative, practical solutions to our client’s cybersecurity issues.
 
 We have over 25 years of experience providing exceptional cybersecurity services to individuals and businesses. At Young Security, cybersecurity consulting is more than giving advice; it is about transparency, training, and technology.
-
-[LinkedIn](https://linkedin.com/in/josephwyoung) | [GitHub](https://github.com/youngsecurity) | [X](https://x.com/Y0UNGSECURITY) | Reddit | YouTube
 
 ## Schedule a free consultation
