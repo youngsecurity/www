@@ -192,5 +192,5 @@ vendor/cache/
 vendor/gems/
 vendor/ruby/
 
-# Note: Gemfile.lock is intentionally NOT ignored as it should be committed for Jekyll projects
-
+# Note: Gemfile.lock is intentionally ignored to not break GitHub Actions workflows that use the Gemfile.lock to install dependencies.
+Gemfile.lock
