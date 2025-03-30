@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEC Insights - Zero Trust Financial Document Security</title>
+    <style>
+        :root {
+            --primary: #3b82f6;
+            --primary-dark: #2563eb;
+            --primary-light: #60a5fa;
+            --secondary: #0f172a;
+            --dark-bg: #0f172a;
+            --darker-bg: #020617;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --border: #334155;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: var(--darker-bg);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo span {
+            color: var(--text);
+        }
+        
+        .logo-shield {
+            margin-right: 0.5rem;
+            color: var(--primary);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        
+        nav ul li a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary-light);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 0.25rem;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 5rem 0;
+            background-color: var(--darker-bg);
+            background-image: linear-gradient(to bottom right, rgba(15, 23, 42, 0.9), rgba(2, 6, 23, 0.95)), url('/api/placeholder/1200/600');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 30% 70%, rgba(59, 130, 246, 0.2), transparent 50%);
+            pointer-events: none;
+        }
+        
+        .hero h1 {
+            font-size: 2.75rem;
+            margin-bottom: 1.5rem;
+            color: var(--text);
+            position: relative;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            position: relative;
+        }
+        
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            position: relative;
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary-light);
+            border: 1px solid var(--primary);
+        }
+        
+        .btn-outline:hover {
+            background-color: rgba(59, 130, 246, 0.1);
+            color: var(--primary-light);
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 5rem 0;
+            background-color: var(--dark-bg);
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-header h2 {
+            font-size: 2.25rem;
+            color: var(--text);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background-color: var(--primary);
+        }
+        
+        .section-header p {
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            background-color: var(--card-bg);
+            border-radius: 0.5rem;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid var(--border);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            border-color: var(--primary);
+        }
+        
+        .feature-icon {
+            background-color: rgba(59, 130, 246, 0.15);
+            color: var(--primary-light);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            border: 1px solid rgba(59, 130, 246, 0.3);
+        }
+        
+        .feature-card h3 {
+            margin-bottom: 1rem;
+            color: var(--text);
+            font-size: 1.25rem;
+        }
+        
+        .feature-card p {
+            color: var(--text-muted);
+            margin-top: auto;
+        }
+        
+        /* Zero Trust Section */
+        .zero-trust {
+            padding: 5rem 0;
+            background-color: var(--darker-bg);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .zero-trust::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 70% 30%, rgba(59, 130, 246, 0.1), transparent 60%);
+            pointer-events: none;
+        }
+        
+        .zero-trust-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+        }
+        
+        .zero-trust-content h2 {
+            font-size: 2.25rem;
+            margin-bottom: 1.5rem;
+            color: var(--text);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .zero-trust-content h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--primary);
+        }
+        
+        .zero-trust-content p {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+        
+        .zero-trust-principles {
+            margin-top: 2rem;
+        }
+        
+        .principle {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background-color: var(--card-bg);
+            border-radius: 0.5rem;
+            border: 1px solid var(--border);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        
+        .principle:hover {
+            transform: translateX(5px);
+            border-color: var(--primary);
+        }
+        
+        .principle-icon {
+            color: var(--primary-light);
+            margin-right: 1rem;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+            background-color: rgba(59, 130, 246, 0.15);
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+        }
+        
+        .principle-content h4 {
+            margin-bottom: 0.5rem;
+            color: var(--text);
+        }
+        
+        .principle-content p {
+            color: var(--text-muted);
+            margin-bottom: 0;
+            font-size: 0.9rem;
+        }
+        
+        .zero-trust-image {
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--border);
+            position: relative;
+            padding: 0.5rem;
+            background-color: var(--card-bg);
+        }
+        
+        .zero-trust-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 0.25rem;
+        }
+        
+        /* Document Selector Section */
+        .document-selector {
+            padding: 5rem 0;
+            background-color: var(--dark-bg);
+        }
+        
+        .selector-container {
+            background-color: var(--card-bg);
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            padding: 2.5rem;
+            border: 1px solid var(--border);
+        }
+        
+        .selector-header {
+            margin-bottom: 2.5rem;
+        }
+        
+        .selector-header h3 {
+            color: var(--text);
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .selector-header h3::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background-color: var(--primary);
+        }
+        
+        .selector-header p {
+            color: var(--text-muted);
+        }
+        
+        .selector-controls {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--text);
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background-color: var(--darker-bg);
+            border: 1px solid var(--border);
+            border-radius: 0.25rem;
+            font-size: 1rem;
+            color: var(--text);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+        }
+        
+        .form-control::placeholder {
+            color: var(--text-muted);
+        }
+        
+        .selected-documents {
+            background-color: var(--darker-bg);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            min-height: 120px;
+            border: 1px solid var(--border);
+        }
+        
+        .selected-documents-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .selected-documents-header h4 {
+            color: var(--text);
+        }
+        
+        .document-tag {
+            display: inline-flex;
+            align-items: center;
+            background-color: var(--card-bg);
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            margin-right: 0.75rem;
+            margin-bottom: 0.75rem;
+            font-size: 0.875rem;
+            border: 1px solid var(--border);
+            transition: border-color 0.3s ease;
+        }
+        
+        .document-tag:hover {
+            border-color: var(--primary);
+        }
+        
+        .document-tag .remove {
+            margin-left: 0.75rem;
+            cursor: pointer;
+            color: var(--text-muted);
+            transition: color 0.3s ease;
+        }
+        
+        .document-tag .remove:hover {
+            color: var(--danger);
+        }
+        
+        /* Benefits Section */
+        .benefits {
+            padding: 5rem 0;
+            background-color: var(--darker-bg);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .benefits::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 30% 70%, rgba(59, 130, 246, 0.1), transparent 60%);
+            pointer-events: none;
+        }
+        
+        .benefits-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3.5rem;
+            position: relative;
+        }
+        
+        .benefit {
+            background-color: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--border);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .benefit:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            border-color: var(--primary);
+        }
+        
+        .benefit-icon {
+            width: 70px;
+            height: 70px;
+            background-color: rgba(59, 130, 246, 0.15);
+            color: var(--primary-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 1.75rem;
+            border: 1px solid rgba(59, 130, 246, 0.3);
+        }
+        
+        .benefit h3 {
+            margin-bottom: 1rem;
+            color: var(--text);
+            font-size: 1.25rem;
+        }
+        
+        .benefit p {
+            color: var(--text-muted);
+            margin-top: auto;
+        }
+        
+        /* CTA Section */
+        .cta {
+            padding: 5rem 0;
+            background-color: var(--primary-dark);
+            background-image: linear-gradient(135deg, var(--primary-dark) 0%, #1e40af 100%);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.1), transparent 50%);
+            pointer-events: none;
+        }
+        
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        .cta p {
+            max-width: 600px;
+            margin: 0 auto 2.5rem;
+            opacity: 0.9;
+            font-size: 1.1rem;
+            position: relative;
+        }
+        
+        .btn-white {
+            background-color: white;
+            color: var(--primary-dark);
+        }
+        
+        .btn-white:hover {
+            background-color: #f1f5f9;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--darker-bg);
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+        }
+        
+        .footer-branding img {
+            height: 40px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-branding p {
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .social-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            background-color: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        .footer-links h4 {
+            font-size: 1.125rem;
+            margin-bottom: 1.5rem;
+            color: white;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .footer-links h4::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            background-color: var(--primary);
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links ul li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .footer-links ul li a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+        }
+        
+        .footer-links ul li a:hover {
+            color: var(--primary-light);
+            transform: translateX(3px);
+        }
+        
+        .footer-bottom {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+        
+        .footer-bottom-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+        
+        .footer-bottom-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-bottom-links a:hover {
+            color: var(--primary-light);
+        }
+        
+        .copyright {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+        
+        /* Security Badge */
+        .security-badge {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--card-bg);
+            border-radius: 9999px;
+            padding: 0.75rem 1.25rem;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--border);
+            z-index: 100;
+            transition: transform 0.3s ease;
+        }
+        
+        .security-badge:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+        
+        .badge-icon {
+            margin-right: 0.75rem;
+            color: var(--success);
+        }
+        
+        .badge-text {
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        
+        /* Loading Indicator */
+        .loading-indicator {
+            width: 2.5rem;
+            height: 2.5rem;
+            border: 3px solid rgba(59, 130, 246, 0.3);
+            border-radius: 50%;
+            border-top-color: var(--primary);
+            animation: spin 1s linear infinite;
+            margin: 2rem auto;
+        }
+        
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        /* Pulse Effect */
+        .pulse {
+            position: relative;
+        }
+        
+        .pulse::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+            box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+            animation: pulse 2s infinite;
+            z-index: -1;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .zero-trust-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .zero-trust-image {
+                order: -1;
+                margin-bottom: 2rem;
+            }
+            
+            .footer-bottom {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .security-badge {
+                left: 20px;
+                right: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <svg class="logo-shield" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path></svg>
+                <div>SEC<span>Insights</span></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Zero Trust</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Zero Trust Financial Document Security</h1>
+            <p>Analyze SEC documents with confidence. Our Zero Trust architecture ensures your financial data remains secure while delivering powerful insights from 10-Ks, 10-Qs, and other critical financial filings.</p>
+            <div class="hero-btns">
+                <a href="#" class="btn pulse">Start Secure Analysis</a>
+                <a href="#" class="btn btn-outline">Request Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Secure Document Analysis</h2>
+                <p>SEC Insights implements Zero Trust principles to keep your financial data secure throughout the analysis process.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <h3>Continuous Authentication</h3>
+                    <p>Every user request is verified with multi-factor authentication and risk-based access controls, preventing unauthorized access to financial data.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                    </div>
+                    <h3>End-to-End Encryption</h3>
+                    <p>All document data is encrypted at rest and in transit, ensuring your sensitive financial analysis remains protected at all times.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9"></path><path d="M18 14v4h-5"></path><path d="m18 14-7 7"></path><path d="M13 2v6h6"></path><path d="m13 8 6-6"></path></svg>
+                    </div>
+                    <h3>Secure Document Sharing</h3>
+                    <p>Share analysis results with your team using dynamic permissions and granular access controls based on least privilege principles.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 16 2 2 4-4"></path><path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14"></path><path d="m7.5 4.27 9 

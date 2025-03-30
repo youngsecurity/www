@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Young Security - Zero Trust Platform</title>
+    <style>
+        :root {
+            --dark-bg: #121212;
+            --darker-bg: #0a0a0a;
+            --primary-green: #00E676;
+            --secondary-green: #00C853;
+            --primary-blue: #2979FF;
+            --secondary-blue: #0D47A1;
+            --text-light: #F5F5F5;
+            --text-muted: #BDBDBD;
+            --card-bg: #1E1E1E;
+            --card-hover: #2D2D2D;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--darker-bg);
+            padding: 1.5rem 2rem;
+            box-shadow: 0 4px 12px rgba(0, 230, 118, 0.15);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-light);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo span.highlight {
+            color: var(--primary-green);
+            margin-right: 5px;
+        }
+
+        .logo span.blue-highlight {
+            color: var(--primary-blue);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--primary-green);
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-blue));
+            color: var(--dark-bg);
+            font-weight: 600;
+            padding: 0.6rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .cta-button:hover {
+            box-shadow: 0 4px 12px rgba(0, 230, 118, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.9)), url('/api/placeholder/1200/600') center/cover;
+            padding: 8rem 2rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(to right, var(--primary-green), var(--primary-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        section {
+            padding: 5rem 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2.2rem;
+            color: var(--text-light);
+        }
+
+        .section-title span {
+            color: var(--primary-green);
+        }
+
+        .features {
+            background-color: var(--darker-bg);
+        }
+
+        .features-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 3px solid transparent;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            background-color: var(--card-hover);
+            border-top: 3px solid var(--primary-green);
+        }
+
+        .feature-card i {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-green);
+            display: block;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-light);
+        }
+
+        .feature-card p {
+            color: var(--text-muted);
+        }
+
+        .feature-card:nth-child(even) i {
+            color: var(--primary-blue);
+        }
+
+        .feature-card:nth-child(even):hover {
+            border-top: 3px solid var(--primary-blue);
+        }
+
+        .how-it-works {
+            background-color: var(--dark-bg);
+        }
+
+        .steps-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .step {
+            display: flex;
+            margin-bottom: 3rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .step:last-child {
+            margin-bottom: 0;
+        }
+
+        .step-number {
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-blue));
+            color: var(--dark-bg);
+            font-weight: 700;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-right: 2rem;
+            flex-shrink: 0;
+        }
+
+        .step-content {
+            padding-top: 0.5rem;
+        }
+
+        .step-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-green);
+        }
+
+        .step:nth-child(even) .step-content h3 {
+            color: var(--primary-blue);
+        }
+
+        .step-content p {
+            color: var(--text-muted);
+        }
+
+        .trust-principles {
+            background-color: var(--darker-bg);
+        }
+
+        .principles-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .principle-card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 3px solid var(--primary-green);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .principle-card:nth-child(even) {
+            border-left: 3px solid var(--primary-blue);
+        }
+
+        .principle-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            background-color: var(--card-hover);
+        }
+
+        .principle-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-light);
+        }
+
+        .principle-card p {
+            color: var(--text-muted);
+            flex-grow: 1;
+        }
+
+        .cta {
+            background: linear-gradient(rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.9)), url('/api/placeholder/1200/600') center/cover;
+            text-align: center;
+        }
+
+        .cta-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-light);
+        }
+
+        .cta p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        footer {
+            background-color: var(--darker-bg);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+            gap: 1.5rem;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-green);
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .social-media a {
+            color: var(--text-muted);
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-media a:hover {
+            color: var(--primary-green);
+        }
+
+        .copyright {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 1rem;
+            }
+
+            .header-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            .hero {
+                padding: 4rem 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            section {
+                padding: 3rem 1rem;
+            }
+
+            .step {
+                flex-direction: column;
+            }
+
+            .step-number {
+                margin-bottom: 1rem;
+                margin-right: 0;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">
+                <span class="highlight">Young</span><span class="blue-highlight">Security</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#principles">Zero Trust</a></li>
+                    <li><a href="#cta">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#cta" class="cta-button">Get Started</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Redefining Security in the Digital Era</h1>
+            <p>Young Security's Zero Trust platform helps organizations protect their critical assets with a comprehensive "never trust, always verify" approach that goes beyond traditional security models.</p>
+            <a href="#features" class="cta-button">Discover How</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2 class="section-title">Powerful <span>Features</span></h2>
+        <div class="features-container">
+            <div class="feature-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Continuous Verification</h3>
+                <p>Authenticate and authorize every user, device, and connection attempt before granting access to applications and data.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-user-lock"></i>
+                <h3>Identity-Based Security</h3>
+                <p>Move beyond network-based security with strong identity verification as the foundation of access decisions.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-sitemap"></i>
+                <h3>Micro-Segmentation</h3>
+                <p>Divide your network into isolated segments to contain breaches and minimize lateral movement by threats.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-eye"></i>
+                <h3>Real-Time Monitoring</h3>
+                <p>Gain comprehensive visibility with advanced analytics that continuously monitor user and device behavior.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-key"></i>
+                <h3>Least Privilege Access</h3>
+                <p>Grant users only the access they need to perform their jobs, reducing your attack surface and risk exposure.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Advanced Analytics</h3>
+                <p>Detect threats faster with AI-powered analytics that identify anomalies and suspicious behavior patterns.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <h2 class="section-title">How It <span>Works</span></h2>
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Verify Identity</h3>
+                    <p>Every access request starts with strict identity verification using multiple factors and contextual data points to ensure users are who they claim to be.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Assess Device Security</h3>
+                    <p>Devices are checked for security compliance, ensuring they meet policy requirements before access is granted to corporate resources.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Apply Least Privilege</h3>
+                    <p>Access is granted based on the principle of least privilege, providing only the necessary permissions for the specific task at hand.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Monitor Continuously</h3>
+                    <p>Behavior is continuously monitored for anomalies, with suspicious activities triggering immediate security responses to prevent potential breaches.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="principles" class="trust-principles">
+        <h2 class="section-title">Zero Trust <span>Principles</span></h2>
+        <div class="principles-container">
+            <div class="principle-card">
+                <h3>Verify Explicitly</h3>
+                <p>Always authenticate and authorize based on all available data points, including user identity, location, device health, service or workload, data classification, and anomalies.</p>
+            </div>
+            <div class="principle-card">
+                <h3>Least Privilege Access</h3>
+                <p>Limit user access with just-in-time and just-enough-access, risk-based adaptive policies, and data protection to secure sensitive information.</p>
+            </div>
+            <div class="principle-card">
+                <h3>Assume Breach</h3>
+                <p>Operate under the assumption that a breach has already occurred. Verify end-to-end encryption and use analytics to detect threats and improve your security posture.</p>
+            </div>
+            <div class="principle-card">
+                <h3>Multi-Factor Authentication</h3>
+                <p>Strengthen identity verification with multiple authentication factors to ensure that users are who they claim to be before granting access.</p>
+            </div>
+            <div class="principle-card">
+                <h3>Continuous Monitoring</h3>
+                <p>Monitor and validate user behavior and device compliance continuously, never trusting any user or device by default regardless of location.</p>
+            </div>
+            <div class="principle-card">
+                <h3>Zero Trust Network</h3>
+                <p>Implement micro-segmentation and granular perimeter enforcement based on users, locations, and other data to prevent lateral movement in the network.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="cta">
+        <div class="cta-container">
+            <h2>Ready to Secure Your Organization?</h2>
+            <p>Get in touch with our security experts today to learn how Young Security's Zero Trust platform can protect your most valuable assets.</p>
+            <a href="#" class="cta-button">Request a Demo</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#principles">Zero Trust</a>
+                <a href="#">About Us</a>
+                <a href="#">Blog</a>
+                <a href="#">Careers</a>
+                <a href="#cta">Contact</a>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+            <p class="copyright">© 2025 Young Security. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
