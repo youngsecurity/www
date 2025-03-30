@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overcoming Zero Trust Visibility and Monitoring Challenges
-author: Joseph Young
+author: joe
 ---
 
 Subtitle: CISOs Must Leverage Comprehensive Security Monitoring Effectively
