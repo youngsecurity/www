@@ -112,4 +112,4 @@ The strategy isn't just theoretically sound; it is pragmatic, grounded in measur
 
 [Mellen, A. (2023, June 26). How To Build A Leading Detection And Response Engineering Practice.](https://www.forrester.com/report/how-to-build-a-leading-detection-and-response-engineering-practice/RES179458)
 
-[Rivera, C. (2024, July 12). Role Profile: Zero Trust Program Manager.(https://www.forrester.com/report/role-profile-zero-trust-program-manager/RES181155)
+[Rivera, C. (2024, July 12). Role Profile: Zero Trust Program Manager.](https://www.forrester.com/report/role-profile-zero-trust-program-manager/RES181155)
