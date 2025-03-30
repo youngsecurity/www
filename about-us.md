@@ -1,6 +1,6 @@
 ---
-layout: default
-title: "About Us"
+layout: about-us
+title: About Us
 permalink: /about-us/
 ---
 ## About us
