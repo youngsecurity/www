@@ -2,14 +2,6 @@
 ---
 @use "{{ site.theme }}";
 
-.centered {
-  text-align: center; /* Center the image horizontally */
-}
-
-.centered img {
-  display: inline-block; /* Ensures the image is treated as a block-level element for better alignment */
-}
-
 /* Sidebar and TOC styles */
 .container {
   display: flex;

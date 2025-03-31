@@ -23,35 +23,22 @@
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  padding: 0;
-  margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: $body-text-color;
-  background-color: $clr-surface-a10;
+  background-color: var(--dark-bg);
+  color: var(--text);
+  line-height: 1.6;
 }
 
-#skip-to-content {
-  height: 1px;
-  width: 1px;
-  position: absolute;
-  overflow: hidden;
-  top: -10px;
-
-  &:focus {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    height: auto;
-    width: auto;
-    background: color.invert($body-link-color);
-    outline: thick solid color.invert($body-link-color);
-  }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 a {
@@ -108,14 +95,16 @@ a {
 }
 
 .page-header {
-  color: $header-heading-color;
-  text-align: center;
-  background-color: $header-bg-color;
+  //color: $header-heading-color;
+  //text-align: center;
+  //background-color: $header-bg-color;
   //background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
-  background-image: $header-bg-image;
-  //background-image: url('https://youngsecurityinc.wordpress.com/wp-content/uploads/2021/09/pexels-photo-3861969.jpeg');
-  background-position: 50% 50%;
-  background-blend-mode: multiply;
+  //background-image: $header-bg-image;
+  background-color: var(--darker-bg);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 
   @include large {
     padding: 5rem 6rem;
