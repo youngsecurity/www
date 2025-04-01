@@ -14,12 +14,12 @@ collections:
 
 defaults:
   - scope:
-      path: ""
-      type: "authors"
+      path: "/_members/"
+      type: "members"
     values:
-      layout: "author"
+      layout: "member"
   - scope:
-      path: ""
+      path: "/_posts/"
       type: "posts"
     values:
       layout: "post"

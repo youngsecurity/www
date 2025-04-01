@@ -2,6 +2,7 @@
 short_name: agent01
 name: Agent 01
 position: Engineering
+layout: member
 ---
 
 # Bio

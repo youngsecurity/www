@@ -2,6 +2,7 @@
 short_name: joe
 name: Joseph Young
 position: CEO
+layout: member
 ---
 
 # {{ page.name }}
