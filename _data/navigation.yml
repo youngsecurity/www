@@ -3,9 +3,7 @@
 - name: Blog
   link: /blog/
 - name: Agents
-  link: https://llm.youngsecurity.net/
-- name: Pentest Agent System
-  link: /pentest-agent-system/
+  link: /agents/
 - name: Zero Trust
   link: /zero-trust/
 - name: Members

@@ -94,29 +94,22 @@ a {
   }
 }
 
-.page-header {
-  //color: $header-heading-color;
-  //text-align: center;
-  //background-color: $header-bg-color;
-  //background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
-  //background-image: $header-bg-image;
-  background-color: var(--darker-bg);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  position: sticky;
-  top: 0;
-  z-index: 100;
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
 
-  @include large {
-    padding: 5rem 6rem;
-  }
-
-  @include medium {
-    padding: 3rem 4rem;
-  }
-
-  @include small {
-    padding: 2rem 1rem;
-  }
+.btn:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
 }
 
 .project-name {

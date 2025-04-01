@@ -1,5 +1,7 @@
 ---
-layout: default
+layout: index
+title: Young Security Inc
+permalink: /
 ---
 ## Mission
 
