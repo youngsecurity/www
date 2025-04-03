@@ -15,6 +15,7 @@
   --secondary-blue: #0D47A1;
   --dark-bg: #0f172a;
   --darker-bg: #020617;
+  --darker-bg-transparent: rgba(2, 6, 23, 0.9);
   --card-bg: #1e293b;
   --card-hover: #2D2D2D;
   --text: #f8fafc;
@@ -27,10 +28,11 @@
 
 /* Responsive styles */
 @media screen and (max-width: 640px) {
+  /*
   .main-content {
     padding: .5rem;
   }
-  
+  */
   .sidebar {
     width: 280px;
     top: 60px;
@@ -62,10 +64,24 @@
     gap: 1rem;
   }
 
-  nav ul {
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
+  /* When the screen is less than 640 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains what should open and close the topnav (.icon) */
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
   }
 
   .hero {
@@ -121,12 +137,6 @@
     gap: 1rem;
   }
 
-  nav ul {
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-  }
-
   .hero {
     padding: 4rem 1rem;
   }
@@ -151,9 +161,9 @@
 
 /* Header Styles */
 header {
-  background-color: #121212f5;
+  background-color: var(--darker-bg-transparent); /* #121212f5;*/
   padding: 1rem;
-  box-shadow: 0 4px 12px rgba(0, 230, 118, 0.15);
+  box-shadow: 0 4px 12px #00ff0070;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -161,7 +171,7 @@ header {
 
 .header-container {
   max-width: 1200px;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -194,28 +204,47 @@ header {
   color: var(--primary);
 }
 
-/* Navbar Styles */
+/* Navbar Responsive Styles */
+/* Add a black background color to the top navigation */
+.topnav {  
+  /* background-color: #333; */
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  transition: color 0.3s ease;  
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: var(--secondary-blue);
+  color: var(--primary);
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: var(--secondary-blue);
+  color: #00ff00;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Navbar List Item Styles */
 nav ul {
-  display: flex;
   list-style: none;
   gap: 1rem;
-}
-
-/*
-nav ul li {
-  margin-left: 1.5rem;
-}
-*/
-
-nav ul li a {
-  color: var(--text-muted);
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: var(--primary-light);
 }
 
 /* CTA Button Styles */
@@ -456,6 +485,7 @@ footer {
   background-color: var(--darker-bg);
   padding: 3rem 2rem;
   text-align: center;
+  bottom: 0;  
 }
 
 .footer-content {
@@ -517,7 +547,7 @@ footer {
   top: 20px;
   right: 20px;
   z-index: 1000;
-  display: flex;
+  /*display: flex;*/
   align-items: center;
   padding: 8px 12px;
   background-color: #2c9321;
@@ -538,7 +568,6 @@ footer {
   width: 18px;
   height: 14px;
   position: relative;
-  margin-right: 8px;
 }
 
 .toc-toggle-icon:before {
@@ -596,6 +625,9 @@ footer {
 
 .main-content {
   flex: 1;
+  /*Testing*/
+  flex-direction: column;
+  min-height: 100vh;
   /*padding: 2rem 6rem;*/
   word-wrap: break-word;
   width: 100%;

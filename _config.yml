@@ -7,8 +7,6 @@ show_downloads: false # ["true" or "false" (unquoted) to indicate whether to pro
 google_analytics: # [Your Google Analytics tracking ID]
 port: 4001
 collections:
-  authors:
-    output: true
   members:
     output: true
 

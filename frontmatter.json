@@ -9,7 +9,12 @@
       "path": "[[workspace]]/_posts"
     },
     {
-      "path": "[[workspace]]/_authors"
+      "title": "_members",
+      "path": "[[workspace]]/_members"
+    },
+    {
+      "title": "_posts",
+      "path": "[[workspace]]/_posts"
     },
     {
       "title": "_members",

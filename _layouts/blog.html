@@ -1,15 +1,104 @@
 ---
 layout: default
 ---
-<main id="content" class="main-content" role="main">
-<h2>Latest Posts</h2>
+<!--
+<section class="hero">
+  <div class="hero-content">
+      
+      <h1>Redefining Security in the Digital Era</h1>
+      <p>Young Security's Zero Trust platform helps organizations protect their critical assets with a comprehensive "never trust, always verify" approach that goes beyond traditional security models.</p>          
+      <a href="#features" class="cta-button">Discover How</a>
+      
+  </div>
+  
+</section>
+-->
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      {{ post.excerpt }}
-    </li>
-  {% endfor %}
-</ul>
+<section id="features" class="features">
+  <h2 class="section-title">Latest <span>Posts</span></h2>
+  <div class="features-container">
+    {% for post in site.posts %}  
+    <div class="feature-card">          
+          <!--
+          <i class="fas fa-shield-alt"></i>          
+          -->
+          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          <p>{{ post.subtitle }}</p>                    
+    </div>
+    {% endfor %}
+  </div>  
+</section>
+<!--
+<section id="how-it-works" class="how-it-works">  
+  <h2 class="section-title">How <span>It Works</span></h2>
+  <div class="steps-container">
+      <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+              <h3>Verify Identity</h3>
+              <p>Every access request starts with strict identity verification using multiple factors and contextual data points to ensure users are who they claim to be.</p>
+          </div>
+      </div>
+      <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+              <h3>Assess Device Security</h3>
+              <p>Devices are checked for security compliance, ensuring they meet policy requirements before access is granted to corporate resources.</p>
+          </div>
+      </div>
+      <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+              <h3>Apply Least Privilege</h3>
+              <p>Access is granted based on the principle of least privilege, providing only the necessary permissions for the specific task at hand.</p>
+          </div>
+      </div>
+      <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+              <h3>Monitor Continuously</h3>
+              <p>Behavior is continuously monitored for anomalies, with suspicious activities triggering immediate security responses to prevent potential breaches.</p>
+          </div>
+      </div>
+  </div>
+
+</section>
+-->
+<!--
+<section id="principles" class="trust-principles">  
+  <h2 class="section-title">Archived <span>Posts</span></h2>
+  <div class="principles-container">      
+      <div class="principle-card">
+          <h3>Post 1</h3>
+          <p>Subtitle</p>
+      </div>
+      <div class="principle-card">
+          <h3>Post 2</h3>
+          <p>Subtitle</p>
+      </div>
+      <div class="principle-card">
+          <h3>Post 3</h3>
+          <p>Subtitle</p>
+      </div>      
+  </div>  
+</section>
+-->
+<!--
+<section id="cta" class="cta">
+
+  <div class="cta-container">
+      
+      <h2>Ready to Secure Your Organization?</h2>
+      <p>Get in touch with our security experts today to learn how Young Security's Zero Trust platform can protect your most valuable assets.</p>
+      <a href="#" class="cta-button">Request a Demo</a>
+      
+  </div>
+
+</section>
+  -->
+
+<!--
+<main id="content" class="main-content" role="main">
+  {{ content }}
 </main>
+-->

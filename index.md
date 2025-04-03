@@ -3,20 +3,33 @@ layout: index
 title: Young Security Inc
 permalink: /
 ---
+
 ## Services
 
-- [Containment Field](https://github.com/youngsecurity/containment-field/)
-  - AI Security
-  - Agentics: LLM-based Multi-Agent Solutions
-    - [Pentest-Agent-System](./pentest-agent-system/)
-  - Identity and Access Management
-  - Disaster Recovery & Data Protection
-  - DevSecOps & Application Security
-    - [![pages-build-deployment](https://github.com/youngsecurity/www/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/youngsecurity/www/actions/workflows/pages/pages-build-deployment)
-    - [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/youngsecurity/containment-field/badge)](https://securityscorecards.dev/viewer/?uri=github.com/youngsecurity/containment-field)
-    - ![dependabot](https://flat.badgen.net/dependabot/user/repo?icon=dependabot)
-  - Observability & Logging
-  - Incident Response & Business Continuity
+- AI Security
+  - [Containment Field](https://github.com/youngsecurity/containment-field/)
+  - [Zee Tee](/zeetee/)
+
+- Agentics: LLM-based Multi-Agent Solutions
+  - [Pentest-Agent-System](./pentest-agent-system/)
+
+- Identity and Access Management
+  - JumpCloud Directory-as-a-Service
+  - Ubuntu Linux Active Directory
+  - Microsoft
+    - Windows Server Active Directory
+    - Azure AD/Entra ID
+
+- Disaster Recovery & Data Protection
+
+- DevSecOps & Application Security
+  - [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/youngsecurity/containment-field/badge)](https://securityscorecards.dev/viewer/?uri=github.com/youngsecurity/containment-field)
+  - ![dependabot](https://flat.badgen.net/dependabot/user/repo?icon=dependabot)
+
+- Observability & Logging
+  - [![pages-build-deployment](https://github.com/youngsecurity/www/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/youngsecurity/www/actions/workflows/pages/pages-build-deployment)
+
+- Incident Response & Business Continuity
 
 ### Ransomware Protection and Mitigation
 

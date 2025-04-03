@@ -3,7 +3,11 @@ layout: about-us
 title: About Us
 permalink: /about-us/
 ---
+
+
 ## About us
+
+<img src="/assets/images/ChatGPT%20Image%20Mar%2030,%202025,%2012_15_16%20AM.png" alt="Joseph Young" width="125">
 
 At Young Security, Inc., we are committed to providing our clients with the highest level of service and the best possible outcomes. We take the time to develop a close relationship and understand each client’s unique cybersecurity needs. We pride ourselves on prompt, clear, and efficient communication. We always strive to deliver creative, practical solutions to our client’s cybersecurity issues.
 
