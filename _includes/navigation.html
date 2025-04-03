@@ -1,5 +1,4 @@
-<div class="topnav" id="myTopnav">          
-  <a href="/">Home</a>  
+<div class="topnav" id="myTopnav">    
   {% for item in site.data.navigation %}
   <a href="{{ item.link }}" {% if page.url == item.link %} style="color: #0f0;"{% endif %}>{{ item.name }}</a>
   {% endfor %}  
