@@ -8,10 +8,6 @@ permalink: /
 
 - AI Security
   - [Containment Field](https://github.com/youngsecurity/containment-field/)
-  - [Zee Tee](/zeetee/)
-
-- Agentics: LLM-based Multi-Agent Solutions
-  - [Pentest-Agent-System](./pentest-agent-system/)
 
 - Identity and Access Management
   - JumpCloud Directory-as-a-Service
