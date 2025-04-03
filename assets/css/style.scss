@@ -43,7 +43,7 @@
     padding: 6px 10px;
   }
   */
-  
+
   .toc h2 {
     font-size: 1.3rem;
   }
@@ -163,8 +163,10 @@ header {
 
 /* Logo Styles */
 .logo {
+  /*background-color: #333;*/
+  padding: 10px 16px;
   float: left;
-  font-size: 1.5rem;
+  font-size: 22px;
   font-weight: 700;
   color: var(--primary);
   display: flex;
@@ -212,7 +214,7 @@ header {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: var(--secondary-blue);
+  /*background-color: var(--secondary-blue);*/
   color: var(--primary);
 }
 
