@@ -36,11 +36,13 @@
     max-height: 80vh;
   }
   
+  /*
   .toc-toggle {
     top: 10px;
     right: 10px;
     padding: 6px 10px;
   }
+  */
   
   .toc h2 {
     font-size: 1.3rem;
@@ -109,11 +111,13 @@
   .toc-toggle-text {
     display: none;
   }
-  
+
+  /*
   .toc-toggle {
     padding: 8px;
   }
-  
+  */
+
   .toc-toggle-icon {
     margin-right: 0;
   }
@@ -122,7 +126,7 @@
     padding: 1rem;
   }
 
-  
+
   
   .hero {
     padding: 4rem 1rem;
@@ -526,12 +530,12 @@ footer {
 /* TOC Toggle Button */
 .toc-toggle {
   position: fixed;
-  top: 8px;
-  right: 19px;
+  top: 4px;
+  right: 25px;
   z-index: 1000;
   /*display: flex;*/
   align-items: center;
-  padding: 8px 12px;
+  /*padding: 8px 12px;*/
   background-color: #2c9321;
   color: white;
   border: none;
