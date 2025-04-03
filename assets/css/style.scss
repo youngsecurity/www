@@ -582,20 +582,21 @@ footer {
 }
 
 .toc-toggle.active .toc-toggle-icon:before {
-  box-shadow: 0 6px 0 0 #fff, 0 12px 0 0 #fff;
-  transform: rotate(45deg) translate(4px, 4px);
+  box-shadow: none;
+  transform: rotate(45deg);
   width: 100%;
+  top: 8px;
 }
 
 .toc-toggle.active .toc-toggle-icon:after {
   content: "";
   position: absolute;
-  width: 70%;
+  width: 100%;
   height: 2px;
   background-color: white;
-  top: 12px;
+  top: 8px;
   left: 0;
-  transform: rotate(-45deg) translate(-2px, -2px);
+  transform: rotate(-45deg);
 }
 
 /* Floating Sidebar */
