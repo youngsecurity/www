@@ -1,12 +1,10 @@
-- name: Home
-  link: /
 - name: Blog
   link: /blog/
 - name: Agents
-  link: https://llm.youngsecurity.net/
-- name: Pentest Agent System
-  link: /pentest-agent-system/
-- name: Members
-  link: /members/
+  link: /agents/
+- name: Zero Trust
+  link: /zero-trust/
+#- name: Members
+#  link: /members/
 - name: About
   link: /about-us/

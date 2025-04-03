@@ -9,4 +9,24 @@
 <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | relative_url }} ">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon-16x16.png' | relative_url }} ">
 <link rel="manifest" href="/site.webmanifest">
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script> var MemberSpace = window.MemberSpace || {"subdomain":"youngsecurity"}; (function(d){ var s = d.createElement("script"); s.src = "https://cdn.memberspace.com/scripts/widgets.js"; var e = d.getElementsByTagName("script")[0]; e.parentNode.insertBefore(s,e); }(document)); </script>
+<!-- Header -->
+<header>
+    <span>
+        <div class="header-container">
+            <a href="/" class="logo">
+                <span>
+                    <svg class="logo-shield" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path>
+                    </svg>
+                </span>
+                <span style="color: #0f0; margin-right: 5px;">Young</span><span>Security</span>
+            </a>
+        </div>
+        {% include navigation.html %}
+    </span>
+</header>
+<!-- End Header --> 
 <!-- end custom head snippets -->

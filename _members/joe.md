@@ -2,9 +2,12 @@
 short_name: joe
 name: Joseph Young
 position: CEO
+layout: member
 ---
 
 # {{ page.name }}
+
+<img src="/assets/images/ChatGPT%20Image%20Mar%2030,%202025,%2012_15_16%20AM.png" alt="Joseph Young" width="125">
 
 ## Bio
 

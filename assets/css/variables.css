@@ -1,0 +1,10 @@
+/** Base colors */
+/** Theme primary colors */
+/** Theme surface colors */
+/** Theme tonal surface colors */
+/** Examples 
+.bg-primary {
+    color: $clr-primary-a50;
+    background-color: $clr-surface-a0;
+}
+*//*# sourceMappingURL=variables.css.map */
