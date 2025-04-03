@@ -29,7 +29,7 @@ To provide resilient IT, cybersecurity and infrastructure services.
 ### Five-step methodology
 
 1. Define manageable Protect Surfaces around applications and workloads by segmenting the larger attack surface.
-2. Using multi-agent RAG, we analyze and map all transaction flows for observability, logging, SIEM, and SOAR.
+2. Using LLM-based multi-agent systems, we analyze and map all transaction flows for observability and logging.
 3. Create access policies for continuous identity verification.
 4. Develop security solutions to match the organization's service value system.
 5. Monitor security posture strength and resiliency through feedback loops and continuous improvement projects.
