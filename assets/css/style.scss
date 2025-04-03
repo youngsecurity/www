@@ -544,7 +544,7 @@ footer {
 /* TOC Toggle Button */
 .toc-toggle {
   position: fixed;
-  top: 20px;
+  /*top: 20px;*/
   right: 20px;
   z-index: 1000;
   /*display: flex;*/
@@ -582,9 +582,9 @@ footer {
 }
 
 .toc-toggle.active .toc-toggle-icon:before {
-  box-shadow: 0 6px 0 0 white;
+  box-shadow: 0 6px 0 0 #fff, 0 12px 0 0 #fff;
   transform: rotate(45deg) translate(4px, 4px);
-  width: 70%;
+  width: 100%;
 }
 
 .toc-toggle.active .toc-toggle-icon:after {
@@ -693,6 +693,7 @@ footer {
   position: absolute;
   background-color: #606c71;
   transition: transform 0.3s ease;
+  box-shadow: none;
 }
 
 .toc-toggle-btn .toc-toggle-icon:before {
