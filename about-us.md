@@ -7,7 +7,7 @@ permalink: /about-us/
 
 ## About us
 
-<a href="https://youngsecurity.net/members/joe.html">
+<a href="/members/joe.html">
   <img src="/assets/images/ChatGPT%20Image%20Mar%2030,%202025,%2012_15_16%20AM.png" alt="Joseph Young" width="200">
 </a>
 
