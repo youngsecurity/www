@@ -2,7 +2,101 @@
 layout: sidebar
 ---
 <!-- This layout is for individual member pages -->
-<!-- It includes the member's name and content -->
-<main id="content" class="main-content" role="main">    
-    {{ content }}
-</main>
+<section class="hero">
+    <div class="hero-content">
+        <h1>{{ page.name }}</h1>
+        <p>
+            {{ page.position }}
+        </p>
+    </div>
+</section>
+
+<section id="features" class="features">
+    <h2 class="section-title">Member <span>Bio</span></h2>
+    <!-- It includes the member's name and content -->
+    <main id="content" class="main-content" role="main">    
+      {{ content }}
+    </main>
+    <div class="features-container">
+        <div class="feature-card">            
+            <h3></h3>
+            <p></p>
+        </div>
+        <div class="feature-card">            
+            <h3></h3>
+            <p></p>
+        </div>
+        <div class="feature-card">            
+            <h3></h3>
+            <p></p>
+        </div>
+    </div>
+</section>
+
+<section id="how-it-works" class="how-it-works">
+    <h2 class="section-title">Section <span>Title</span></h2>
+    <div class="steps-container">
+        <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="step">
+          <div class="step-number">5</div>
+          <div class="step-content">
+              <h3></h3>
+              <p></p>
+          </div>
+      </div>
+    </div>
+</section>
+
+<section id="principles" class="trust-principles">
+  <h2 class="section-title">Section <span>Title</span></h2>
+  <div class="principles-container">
+      <div class="principle-card">
+          <h3></h3>
+          <p></p>
+      </div>
+      <div class="principle-card">
+          <h3></h3>
+          <p></p>
+      </div>
+      <div class="principle-card">
+          <h3></h3>
+          <p></p>
+      </div>
+  </div>
+</section>
+
+<section id="cta" class="cta">
+    <div class="cta-container">
+        <h2>Questions?</h2>
+        <p>
+        </p>
+        <a href="/about-us/" class="cta-button">Contact Joe</a>
+    </div>
+</section>

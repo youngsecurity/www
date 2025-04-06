@@ -5,11 +5,9 @@ position: CEO
 layout: member
 ---
 
-# {{ page.name }}
-
 <img src="/assets/images/ChatGPT%20Image%20Mar%2030,%202025,%2012_15_16%20AM.png" alt="Joseph Young" width="200">
 
-## Bio
+## Intro
 
 My name is Joseph Young, and I am the CEO of Young Security, a cybersecurity and information assurance firm. Previously, I have held roles including CTO, IT Operations Manager, Director of Security and Infrastructure, Chief Engineer, Principal Security Architect, AI Security Engineer, Agentic Workflow Engineer, Senior Software Developer, and Senior Systems and Platform Engineer.
 
