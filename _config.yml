@@ -9,6 +9,8 @@ port: 4001
 collections:
   members:
     output: true
+  exercises:
+    output: true
 
 defaults:
   - scope:
@@ -21,6 +23,11 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+  - scope:
+      path: "/_exercises/"
+      type: "exercises"
+    values:
+      layout: "exercises"
   - scope:
       path: ""
     values:
