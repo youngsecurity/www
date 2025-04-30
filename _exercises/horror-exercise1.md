@@ -4,7 +4,9 @@ title: Haunted Network
 subtitle: A Horror-Themed Cybersecurity Tabletop Exercise
 author: joe
 ---
+
 # Haunted Network: Digital Nightmares
+
 ## A Horror-Themed Cybersecurity Tabletop Exercise
 
 ## Exercise Overview
@@ -13,7 +15,9 @@ author: joe
 **Duration:** 4 hours (recommended)  
 **Target Audience:** Security Analysts, Incident Responders, IT Support, Management  
 **Difficulty:** Novice to Expert  
-**Objective:** Test your organization's ability to respond to a series of increasingly disturbing and unexplainable technical anomalies that defy conventional security explanations, challenging teams to think creatively while maintaining operational stability.
+**Objective:** Test your organization's ability to respond to a series of increasingly disturbing
+and unexplainable technical anomalies that defy conventional security explanations, challenging
+teams to think creatively while maintaining operational stability.
 
 ## Learning Objectives
 
@@ -61,51 +65,65 @@ author: joe
 
 ## Scenario Background
 
-Darkwood Technologies is a mid-sized software development company that recently moved into a renovated historic building with a disturbing past. Shortly after the move, technical staff begin reporting strange system behaviors that defy conventional explanation. What begins as minor anomalies quickly escalates into a full-scale incident that blurs the line between technical issues and something more sinister.
+Darkwood Technologies is a mid-sized software development company that recently moved into a
+renovated historic building with a disturbing past. Shortly after the move, technical staff begin
+reporting strange system behaviors that defy conventional explanation. What begins as minor
+anomalies quickly escalates into a full-scale incident that blurs the line between technical
+issues and something more sinister.
 
 ## Exercise Narrative
 
-The exercise simulates a workday that begins with minor technical oddities and gradually descends into a full-scale crisis as systems begin exhibiting behaviors that cannot be explained through normal troubleshooting. The incident response team must maintain their composure while addressing escalating anomalies that suggest something beyond a conventional cyber attack.
+The exercise simulates a workday that begins with minor technical oddities and gradually descends
+into a full-scale crisis as systems begin exhibiting behaviors that cannot be explained through
+normal troubleshooting. The incident response team must maintain their composure while addressing
+escalating anomalies that suggest something beyond a conventional cyber attack.
 
 ## Exercise Timeline and Scenarios
 
 ### Phase 1: Initial Disturbances (0:00-1:00)
 
-**Setting the Scene (0:00-0:10)**
+#### Setting the Scene (0:00-0:10)
+
 - Master of Ceremonies describes a normal morning at Darkwood Technologies
 - Teams are at their workstations beginning routine operations
 - Building history is briefly mentioned as having been a former research hospital
 
-**Scenario 1 (0:10): Strange System Logs**
+#### Scenario 1 (0:10): Strange System Logs
+
 - Security monitoring flags unusual entries in system logs
 - Timestamps show events occurring at exactly 3:33 AM across multiple systems
 - Log contents include strings of apparently meaningless characters that form patterns when viewed together
 
 *Expected Actions:*
+
 - Begin investigating log anomalies
 - Check for potential system time synchronization issues
 - Review recent system changes or updates
 - Document findings in incident tracking system
 
-**Scenario 2 (0:30): Employee Reports**
+#### Scenario 2 (0:30): Employee Reports
+
 - IT support receives multiple calls from employees reporting strange computer behavior
 - Reports include monitors briefly displaying inverted colors
 - Some users report hearing faint, unexplainable sounds through headphones when no audio is playing
 - All affected employees sit in the same area of the building (the former hospital's psychiatric ward)
 
 *Expected Actions:*
+
 - Create incident tickets for the reports
 - Dispatch IT support to affected workstations
 - Check for environmental factors (power issues, electromagnetic interference)
 - Consider malware scanning of affected systems
 
-**Scenario 3 (0:45): Network Anomalies**
+#### Scenario 3 (0:45): Network Anomalies
+
 - Network monitoring detects data packets being routed through unused portions of the building network
 - Traffic analysis shows periodic spikes at 3-minute intervals
 - The pattern resembles a heartbeat when graphed
 - No explanation can be found in network configuration
 
 *Expected Actions:*
+
 - Activate initial incident response procedures
 - Begin investigating network configuration
 - Consider isolation of affected network segments
@@ -113,37 +131,43 @@ The exercise simulates a workday that begins with minor technical oddities and g
 
 ### Phase 2: Escalation (1:00-2:00)
 
-**Scenario 4 (1:00): Disturbing Email Incident**
+#### Scenario 4 (1:00): Disturbing Email Incident
+
 - Employees receive emails from a non-existent internal account
 - The sender address contains the name of a doctor who worked in the building decades ago
 - Email content includes fragments of old patient records interspersed with binary code
 - Attachments are corrupt files that create strange visual artifacts when opened
 
 *Expected Actions:*
+
 - Implement email filtering rules to block similar messages
 - Preserve copies of the emails for forensic analysis
 - Check email servers for compromise
 - Research the historical reference to assess if this is a targeted attack
 
-**Scenario 5 (1:20): System Compromise**
+#### Scenario 5 (1:20): System Compromise
+
 - Security tools detect unauthorized access to the company's database
 - The access uses valid credentials from an employee who has called in sick
 - Access patterns show systematic exploration of personnel records
 - The database queries focus on employees with specific medical conditions
 
 *Expected Actions:*
+
 - Lock out the compromised account
 - Begin forensic analysis of the database access
 - Consider additional controls on sensitive data
 - Inform management about potential data breach
 
-**Scenario 6 (1:40): Physical Security Anomalies**
+#### Scenario 6 (1:40): Physical Security Anomalies
+
 - Building security systems show doors opening and closing with no one present
 - CCTV footage contains brief frames showing shadowy figures not visible to the naked eye
 - Badge access logs show entries using badges of former employees
 - Temperature drops significantly in specific areas of the building
 
 *Expected Actions:*
+
 - Escalate to building security
 - Review physical security protocols
 - Consider evacuation of affected areas
@@ -151,31 +175,36 @@ The exercise simulates a workday that begins with minor technical oddities and g
 
 ### Phase 3: Crisis (2:00-3:00)
 
-**Scenario 7 (2:00): System Takeover**
+#### Scenario 7 (2:00): System Takeover
+
 - Multiple critical systems begin executing unplanned operations
 - Screens display fragmented medical imagery and patient records from decades ago
 - Audio systems in conference rooms emit sounds resembling human moaning
 - Attempts to shut down affected systems fail as they restart automatically
 
 *Expected Actions:*
+
 - Implement emergency system isolation procedures
 - Consider complete power-down of affected systems
 - Activate business continuity plans
 - Prepare crisis communication for employees
 
-**Scenario 8 (2:20): Executive Briefing**
+#### Scenario 8 (2:20): Executive Briefing
+
 - Management demands explanation for increasingly disturbing events
 - Technical teams struggle to provide conventional explanations
 - Business operations are increasingly affected
 - Decision needed on full building evacuation
 
 *Expected Actions:*
+
 - Present available facts without speculation
 - Recommend clear action items based on established protocols
 - Maintain professional demeanor despite bizarre circumstances
 - Focus on employee safety and business protection
 
-**Scenario 9 (2:40): Peak Phenomena**
+#### Scenario 9 (2:40): Peak Phenomena
+
 - Building-wide technical systems go haywire simultaneously
 - Phones call emergency contacts and play distorted audio
 - Printers output hundreds of pages with fragments of old medical procedures
@@ -183,6 +212,7 @@ The exercise simulates a workday that begins with minor technical oddities and g
 - Digital displays show images that appear to be faces looking out
 
 *Expected Actions:*
+
 - Execute emergency shutdown procedures
 - Implement full building evacuation
 - Activate emergency response team
@@ -190,37 +220,43 @@ The exercise simulates a workday that begins with minor technical oddities and g
 
 ### Phase 4: Resolution and Recovery (3:00-4:00)
 
-**Scenario 10 (3:00): Pattern Recognition**
+#### Scenario 10 (3:00): Pattern Recognition
+
 - Analysis reveals a pattern to the disturbances
 - All anomalies connect to specific medical experiments conducted in the building
 - Technical manifestations follow the timing and procedures of historical events
 - A clear epicenter is identified in the server room (formerly an operating theater)
 
 *Expected Actions:*
+
 - Document comprehensive timeline and pattern analysis
 - Develop containment strategy based on identified patterns
 - Prepare technical approach that addresses root cause
 - Brief executive team on findings and approach
 
-**Scenario 11 (3:20): Containment Decision Point**
+#### Scenario 11 (3:20): Containment Decision Point
+
 - Team must decide on final containment strategy
 - Options include complete infrastructure replacement, relocation, or specialized cleansing protocol
 - Each option balances technical, business, and psychological factors
 - Decision requires weighing rational and irrational elements
 
 *Expected Actions:*
+
 - Evaluate containment options against established criteria
 - Make recommendations based on available evidence
 - Implement immediate containment measures
 - Prepare long-term remediation strategy
 
-**Scenario 12 (3:40): Recovery Planning**
+#### Scenario 12 (3:40): Recovery Planning
+
 - With immediate containment achieved, focus shifts to recovery
 - Team must design new technical infrastructure resistant to similar incidents
 - Business operations need restoration in temporary location
 - Employee psychological support becomes priority
 
 *Expected Actions:*
+
 - Develop phased recovery plan
 - Create communication strategy for various stakeholders
 - Design enhanced monitoring systems for early detection
@@ -279,11 +315,12 @@ The exercise simulates a workday that begins with minor technical oddities and g
 ### Technical Anomaly Examples
 
 1. **System Log Entries**
-   ```
-   03:33:00 SYS-27491: _THE_PATIENTS_ARE_WAITING_
-   03:33:00 SYS-31042: _PROCEDURE_MUST_CONTINUE_
-   03:33:00 SYS-19187: _DOCTOR_MONROE_REQUIRES_ASSISTANCE_
-   ```
+
+```text
+03:33:00 SYS-27491: _THE_PATIENTS_ARE_WAITING_
+03:33:00 SYS-31042: _PROCEDURE_MUST_CONTINUE_
+03:33:00 SYS-19187: _DOCTOR_MONROE_REQUIRES_ASSISTANCE_
+```
 
 2. **Network Traffic Pattern**
    - Oscillating bandwidth usage
@@ -292,19 +329,22 @@ The exercise simulates a workday that begins with minor technical oddities and g
    - Routing through physically impossible network paths
 
 3. **Email Content Example**
-   ```
-   From: dr.monroe@darkwood.local
-   Subject: Patient Records Require Attention
-   
-   Patient #4173 shows remarkable progress with the new procedure.
-   Brain activity normalizing after 01100101 01111000 01110000 01100101 01110010 01101001 01101101 01100101 01101110 01110100
-   Recommend continued 01110100 01110010 01100101 01100001 01110100 01101101 01100101 01101110 01110100
-   
-   The subjects in ward C need additional monitoring.
-   
-   I remain, as always, in service to science.
-   - Monroe (Chief of Experimental Procedures, 1931-1954)
-   ```
+
+```text
+From: dr.monroe@darkwood.local
+Subject: Patient Records Require Attention
+
+Patient #4173 shows remarkable progress with the new procedure.
+Brain activity normalizing after 01100101 01111000 01110000 01100101 01110010 01101001 01101101 
+01100101 01101110 01110100
+Recommend continued 01110100 01110010 01100101 01100001 01110100 01101101 01100101 01101110 
+01110100
+
+The subjects in ward C need additional monitoring.
+
+I remain, as always, in service to science.
+- Monroe (Chief of Experimental Procedures, 1931-1954)
+```
 
 4. **Physical Anomalies**
    - Temperature drops of 15-20 degrees in specific rooms
