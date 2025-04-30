@@ -75,38 +75,45 @@ A sophisticated threat actor has identified MegaGuard as a prime target for a su
 
 ### Phase 1: Initial Compromise (0:00-1:00)
 
-**Setting the Scene (0:00-0:10)**
+#### Setting the Scene (0:00-0:10)
+
 - Facilitator introduces the day as a normal operating day at MegaGuard SOC
 - Teams are at their regular stations performing routine monitoring
 
-**Inject 1 (0:10): Suspicious Login Alert**
+### Inject 1 (0:10): Suspicious Login Alert
+
 - A SIEM alert shows an unusual successful authentication to the SOC platform from an unrecognized IP address
 - The login credentials belong to a junior SOC analyst who is currently on vacation
 - The login occurred outside normal business hours
 
 *Expected Actions:*
+
 - Investigate the alert
 - Check user account status
 - Review login source and patterns
 - Begin documenting the incident
 
-**Inject 2 (0:30): Discovery of Suspicious Activity**
+### Inject 2 (0:30): Discovery of Suspicious Activity
+
 - The compromised account has been observed running unusual queries in the SOC platform
 - Queries focused on gathering information about client connections, particularly for NexBank and PowerGrid
 - Several permission elevation attempts were detected
 
 *Expected Actions:*
+
 - Escalate the incident to senior team members
 - Consider isolating potentially affected systems
 - Begin preparing initial client communication if necessary
 - Start assembling an incident response team
 
-**Inject 3 (0:45): Malicious Tool Detection**
+### Inject 3 (0:45): Malicious Tool Detection
+
 - A detection system identifies a potential data exfiltration tool installed on an internal system
 - The tool appears to have been installed using the compromised credentials
 - Initial evidence suggests sensitive data about client network topologies may have been accessed
 
 *Expected Actions:*
+
 - Activate formal incident response procedures
 - Assign roles and responsibilities to team members
 - Begin deeper forensic investigation
@@ -114,34 +121,40 @@ A sophisticated threat actor has identified MegaGuard as a prime target for a su
 
 ### Phase 2: Escalation (1:00-2:00)
 
-**Inject 4 (1:00): Client Alert - NexBank**
+### Inject 4 (1:00): Client Alert - NexBank
+
 - NexBank SOC team calls reporting suspicious activities in their environment
 - They've detected scanning activity coming from an IP address associated with MegaGuard's management infrastructure
 - The scanning appears to be targeting their financial transaction processing systems
 
 *Expected Actions:*
+
 - Acknowledge the potential connection to the earlier compromise
 - Collaborate with the client's security team
 - Investigate potential pivot from MegaGuard systems to client network
 - Update incident documentation and escalate internally
 
-**Inject 5 (1:20): Malware Detection**
+### Inject 5 (1:20): Malware Detection
+
 - Analysis of the compromised system reveals a sophisticated, previously unseen backdoor
 - The backdoor provides persistent access and has anti-forensic capabilities
 - Evidence shows the malware has been present for approximately 30 days
 
 *Expected Actions:*
+
 - Perform detailed malware analysis
 - Begin investigating patient zero and initial infection vector
 - Consider implications for other systems and clients
 - Update incident response team and management
 
-**Inject 6 (1:40): Detection Evasion**
+### Inject 6 (1:40): Detection Evasion
+
 - The threat actor begins deleting logs and evidence from compromised systems
 - Attempts to modify monitoring rules to avoid future detection are observed
 - A ransomware binary is discovered but not yet executed
 
 *Expected Actions:*
+
 - Take steps to preserve evidence before it's destroyed
 - Implement additional monitoring to track attacker movements
 - Consider system isolation measures
@@ -149,34 +162,40 @@ A sophisticated threat actor has identified MegaGuard as a prime target for a su
 
 ### Phase 3: Crisis Management (2:00-3:00)
 
-**Inject 7 (2:00): Critical Infrastructure Alert**
+### Inject 7 (2:00): Critical Infrastructure Alert
+
 - PowerGrid reports unusual connection attempts to their SCADA systems
 - The attempts are coming from trusted MegaGuard monitoring servers
 - PowerGrid has disconnected MegaGuard's access as a precaution
 
 *Expected Actions:*
+
 - Acknowledge the severity of the situation
 - Implement crisis communication procedures
 - Coordinate with PowerGrid's security team
 - Prepare for potential regulatory reporting requirements
 
-**Inject 8 (2:20): Executive Involvement**
+### Inject 8 (2:20): Executive Involvement
+
 - MegaGuard's CEO requests an immediate briefing on the situation
 - Several other clients have begun calling with concerns
 - Media outlets have reached out asking about a potential breach
 
 *Expected Actions:*
+
 - Prepare a concise executive summary
 - Organize information for efficient decision-making
 - Advise on potential public relations strategies
 - Continue technical response activities
 
-**Inject 9 (2:40): Ransom Demand**
+### Inject 9 (2:40): Ransom Demand
+
 - A ransom note appears on several compromised systems
 - The attackers claim to have exfiltrated client data and threaten to publish it
 - They demand $2 million in cryptocurrency within 48 hours
 
 *Expected Actions:*
+
 - Document the ransom demand
 - Assess legitimacy of the attacker's claims
 - Discuss potential response options with leadership
@@ -185,34 +204,40 @@ A sophisticated threat actor has identified MegaGuard as a prime target for a su
 
 ### Phase 4: Resolution and Recovery (3:00-4:00)
 
-**Inject 10 (3:00): Attacker TTPs Identified**
+### Inject 10 (3:00): Attacker TTPs Identified
+
 - Forensic analysis reveals the complete attack path and techniques used
 - Digital evidence points to a known threat actor with state-sponsored connections
 - A vulnerability in the SOC platform's VPN is identified as the initial entry point
 
 *Expected Actions:*
+
 - Document all findings for post-incident analysis
 - Develop a comprehensive remediation plan
 - Prioritize critical security gaps for immediate fixing
 - Prepare technical details for affected clients
 
-**Inject 11 (3:20): Containment Decision Point**
+### Inject 11 (3:20): Containment Decision Point
+
 - The incident response team must decide on final containment actions
 - Options include temporary shutdown of the SOC platform vs. aggressive monitoring
 - Each option has different impacts on service delivery and recovery time
 
 *Expected Actions:*
+
 - Evaluate pros and cons of each option
 - Make a decision based on risk assessment
 - Communicate the decision and rationale to stakeholders
 - Begin implementing the chosen approach
 
-**Inject 12 (3:40): Recovery Planning**
+### Inject 12 (3:40): Recovery Planning
+
 - With the immediate threat contained, focus shifts to recovery
 - Multiple clients are requesting detailed incident reports
 - Regulatory reporting deadlines are approaching
 
 *Expected Actions:*
+
 - Develop a prioritized recovery sequence
 - Create a communication plan for different stakeholders
 - Prepare initial regulatory notifications
@@ -321,6 +346,7 @@ A sophisticated threat actor has identified MegaGuard as a prime target for a su
 ## Appendix: Detailed Technical Injects
 
 ### Technical Details for Inject 1
+
 - Username: james.wilson
 - Source IP: 185.156.73.42 (Location: Eastern Europe)
 - Timestamp: 03:27 AM local time
@@ -328,17 +354,21 @@ A sophisticated threat actor has identified MegaGuard as a prime target for a su
 - Failed attempts: None (successful on first try)
 
 ### Technical Details for Inject 2
+
 - SQL queries executed:
+
   ```sql
   SELECT client_id, client_name, industry, primary_contact FROM clients WHERE priority_level = 'High'
   SELECT connection_string, access_credentials, network_diagram FROM client_access WHERE client_id = 'NB001'
   SELECT * FROM user_accounts WHERE access_level = 'Administrator'
   ```
+
 - Permission escalation attempt:
   - Use of built-in diagnostic tool with known privilege escalation vulnerability
   - Attempt to add account to administrative security group
 
 ### Technical Details for Inject 3
+
 - Malicious tool details:
   - Name: svchost64.exe (disguised as legitimate Windows process)
   - Location: C:\ProgramData\Microsoft\Windows\Services\
@@ -346,6 +376,7 @@ A sophisticated threat actor has identified MegaGuard as a prime target for a su
   - Data accessed: Client configuration database, network diagrams, firewall rules
 
 ### Technical Details for Inject 5
+
 - Malware characteristics:
   - Custom-built backdoor with elements similar to known APT group "BlackMamba"
   - Uses DNS tunneling for command and control
@@ -357,6 +388,7 @@ A sophisticated threat actor has identified MegaGuard as a prime target for a su
     - system-verification.org
 
 ### Technical Details for Inject 7
+
 - PowerGrid SCADA connection attempts:
   - Target systems: Substation management controllers
   - Access attempts using legitimate MegaGuard service account
@@ -364,7 +396,9 @@ A sophisticated threat actor has identified MegaGuard as a prime target for a su
   - Source: MegaGuard monitoring server 192.168.24.56
 
 ### Technical Details for Inject 9
+
 - Ransom note text:
+
   ```
   ATTENTION MEGAGUARD SECURITY:
   
@@ -382,6 +416,7 @@ A sophisticated threat actor has identified MegaGuard as a prime target for a su
   ```
 
 ### Technical Details for Inject 10
+
 - Attack path:
   1. Initial access via exploited vulnerability in VPN service (CVE-2023-XXXX)
   2. Credential theft using memory scraping technique
