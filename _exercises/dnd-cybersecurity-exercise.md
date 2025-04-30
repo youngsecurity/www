@@ -75,38 +75,45 @@ A sophisticated shadow mage has identified the Guardian Order as a prime target 
 
 ### Phase 1: Initial Corruption (0:00-1:00)
 
-**Setting the Scene (0:00-0:10)**
+#### Setting the Scene (0:00-0:10)
+
 - Dungeon Master introduces the day as a normal day at the Guardian Order's Scrying Operations Chamber
 - Adventurers are at their regular posts performing routine magical monitoring
 
-**Magical Event 1 (0:10): Suspicious Arcane Signature**
+### Magical Event 1 (0:10): Suspicious Arcane Signature
+
 - A magical alert shows an unusual successful authentication to the scrying network from an unrecognized ley line
 - The arcane credentials belong to a junior scrying mage who is currently on pilgrimage to the outer planes
 - The authentication occurred during the dark hours when most mages rest
 
 *Expected Actions:*
+
 - Investigate the magical alert
 - Check mage's status through sending stones
 - Review authentication source and patterns
 - Begin documenting the magical incursion in the order's tome
 
-**Magical Event 2 (0:30): Discovery of Suspicious Activity**
+### Magical Event 2 (0:30): Discovery of Suspicious Activity
+
 - The compromised arcane signature has been observed casting unusual divination spells in the scrying network
 - Divinations focused on gathering information about kingdom connections, particularly for Goldkeep and Powerforge
 - Several attempts to enhance magical permissions were detected in the aether
 
 *Expected Actions:*
+
 - Escalate the incident to senior mages and paladins
 - Consider creating wards around potentially affected magical nodes
 - Begin preparing initial kingdom communication scrolls if necessary
 - Start assembling a magical incident response party
 
-**Magical Event 3 (0:45): Dark Artifact Detection**
+### Magical Event 3 (0:45): Dark Artifact Detection
+
 - A detection ward identifies a potential data extraction artifact installed on an internal magical node
 - The artifact appears to have been placed using the compromised credentials
 - Initial evidence suggests sensitive information about kingdom magical defenses may have been accessed
 
 *Expected Actions:*
+
 - Activate formal magical countermeasure procedures
 - Assign roles and responsibilities to party members
 - Begin deeper arcane investigation
@@ -114,34 +121,40 @@ A sophisticated shadow mage has identified the Guardian Order as a prime target 
 
 ### Phase 2: Arcane Escalation (1:00-2:00)
 
-**Magical Event 4 (1:00): Kingdom Alert - Goldkeep**
+### Magical Event 4 (1:00): Kingdom Alert - Goldkeep
+
 - Goldkeep's Royal Mages send an urgent message reporting suspicious magical activities in their realm
 - They've detected arcane probing coming from a ley line associated with the Guardian Order's management infrastructure
 - The probing appears to be targeting their gold and treasure transmutation systems
 
 *Expected Actions:*
+
 - Acknowledge the potential connection to the earlier corruption
 - Collaborate with the kingdom's magical defense team
 - Investigate potential magical portal from Guardian Order systems to kingdom network
 - Update incident documentation and escalate internally to higher-ranking mages
 
-**Magical Event 5 (1:20): Dark Magic Detection**
+### Magical Event 5 (1:20): Dark Magic Detection
+
 - Analysis of the compromised magical node reveals a sophisticated, previously unseen shadow portal
 - The portal provides persistent access and has anti-detection enchantments
 - Evidence shows the dark magic has been present for approximately one full moon cycle
 
 *Expected Actions:*
+
 - Perform detailed magical analysis
 - Begin investigating the original corruption vector
 - Consider implications for other magical systems and kingdoms
 - Update the incident response party and noble council
 
-**Magical Event 6 (1:40): Detection Avoidance Magic**
+### Magical Event 6 (1:40): Detection Avoidance Magic
+
 - The shadow mage begins erasing magical traces and evidence from compromised nodes
 - Attempts to modify scrying wards to avoid future detection are observed
 - A powerful curse scroll is discovered but not yet activated
 
 *Expected Actions:*
+
 - Take steps to preserve magical evidence before it's dispelled
 - Implement additional scrying to track shadow mage movements
 - Consider magical isolation measures
@@ -149,34 +162,40 @@ A sophisticated shadow mage has identified the Guardian Order as a prime target 
 
 ### Phase 3: Magical Crisis Management (2:00-3:00)
 
-**Magical Event 7 (2:00): Critical Infrastructure Alert**
+### Magical Event 7 (2:00): Critical Infrastructure Alert
+
 - Powerforge reports unusual magical connection attempts to their elemental control system
 - The attempts are coming from trusted Guardian Order monitoring crystals
 - Powerforge has severed the Guardian Order's arcane connections as a precaution
 
 *Expected Actions:*
+
 - Acknowledge the severity of the magical situation
 - Implement crisis communication scrolls
 - Coordinate with Powerforge's arcane defense team
 - Prepare for potential reporting to the High Arcane Council
 
-**Magical Event 8 (2:20): Noble Council Involvement**
+### Magical Event 8 (2:20): Noble Council Involvement
+
 - The Guardian Order's High Mage requests an immediate magical briefing on the situation
 - Several other kingdoms have begun sending messages with concerns
 - Bards from various realms have reached out asking about a potential breach of magical defenses
 
 *Expected Actions:*
+
 - Prepare a concise magical summary for the High Mage
 - Organize information for efficient decision-making
 - Advise on potential public relations strategies
 - Continue technical arcane response activities
 
-**Magical Event 9 (2:40): Dark Demands**
+### Magical Event 9 (2:40): Dark Demands
+
 - A magical demand appears on several compromised crystal balls
 - The shadow mage claims to have extracted kingdom secrets and threatens to publish them in the town squares
 - They demand 2 million gold pieces in dragon-blessed currency within 48 hours
 
 *Expected Actions:*
+
 - Document the magical demand
 - Assess legitimacy of the shadow mage's claims
 - Discuss potential response options with leadership
@@ -185,34 +204,40 @@ A sophisticated shadow mage has identified the Guardian Order as a prime target 
 
 ### Phase 4: Resolution and Recovery (3:00-4:00)
 
-**Magical Event 10 (3:00): Shadow Mage Tactics Identified**
+### Magical Event 10 (3:00): Shadow Mage Tactics Identified
+
 - Magical forensics reveals the complete attack path and spells used
 - Arcane evidence points to a known shadow mage with connections to the Shadowfell
 - A vulnerability in the scrying network's portal system is identified as the initial entry point
 
 *Expected Actions:*
+
 - Document all findings for post-incident analysis
 - Develop a comprehensive magical cleansing plan
 - Prioritize critical magical gaps for immediate warding
 - Prepare technical details for affected kingdoms
 
-**Magical Event 11 (3:20): Containment Decision Point**
+### Magical Event 11 (3:20): Containment Decision Point
+
 - The incident response party must decide on final containment spells
 - Options include temporary shutdown of the scrying network vs. aggressive monitoring enchantments
 - Each option has different impacts on magical service delivery and recovery time
 
 *Expected Actions:*
+
 - Evaluate pros and cons of each option
 - Make a decision based on magical risk assessment
 - Communicate the decision and rationale to stakeholders
 - Begin implementing the chosen approach
 
-**Magical Event 12 (3:40): Recovery Planning**
+### Magical Event 12 (3:40): Recovery Planning
+
 - With the immediate magical threat contained, focus shifts to recovery
 - Multiple kingdoms are requesting detailed magical incident scrolls
 - High Arcane Council reporting deadlines are approaching
 
 *Expected Actions:*
+
 - Develop a prioritized magical recovery sequence
 - Create a sending stone communication plan for different stakeholders
 - Prepare initial council notifications
@@ -321,6 +346,7 @@ A sophisticated shadow mage has identified the Guardian Order as a prime target 
 ## Appendix: Detailed Magical Events
 
 ### Magical Details for Event 1
+
 - Mage Name: James Wilsonfire
 - Source Ley Line: The Eastern Shadowlands (unusual connection point)
 - Timestamp: During the third hour of darkness
@@ -328,17 +354,21 @@ A sophisticated shadow mage has identified the Guardian Order as a prime target 
 - Failed attempts: None (successful on first magical attempt)
 
 ### Magical Details for Event 2
+
 - Divination spells cast:
+
   ```
   REVEAL kingdoms, kingdom_name, realm, primary_contact WHERE priority_level = 'High'
   REVEAL connection_runes, access_sigils, defense_diagrams FROM kingdom_access WHERE kingdom_id = 'GB001'
   REVEAL * FROM mage_registry WHERE access_level = 'Archmage'
   ```
+
 - Permission escalation attempt:
   - Use of built-in diagnostic spell with known sigil manipulation vulnerability
   - Attempt to add magical signature to archmage security circle
 
 ### Magical Details for Event 3
+
 - Dark artifact details:
   - Name: Shadowserve (disguised as legitimate magical process)
   - Location: Hidden in the Central Spellcasting Chamber
@@ -346,6 +376,7 @@ A sophisticated shadow mage has identified the Guardian Order as a prime target 
   - Data accessed: Kingdom configuration grimoire, magical defense diagrams, ward configurations
 
 ### Magical Details for Event 5
+
 - Dark magic characteristics:
   - Custom-built shadow portal with elements similar to known dark mage "Shadowmamba"
   - Uses magical tunneling for command and control
@@ -357,6 +388,7 @@ A sophisticated shadow mage has identified the Guardian Order as a prime target 
     - system-verification.voidspace
 
 ### Magical Details for Event 7
+
 - Powerforge elemental control connection attempts:
   - Target systems: Elemental binding controllers
   - Access attempts using legitimate Guardian Order service sigils
@@ -364,7 +396,9 @@ A sophisticated shadow mage has identified the Guardian Order as a prime target 
   - Source: Guardian Order monitoring crystal in the Western Tower
 
 ### Magical Details for Event 9
+
 - Dark demand scroll text:
+
   ```
   ATTENTION GUARDIAN ORDER:
   
@@ -382,6 +416,7 @@ A sophisticated shadow mage has identified the Guardian Order as a prime target 
   ```
 
 ### Magical Details for Event 10
+
 - Attack path:
   1. Initial access via exploited vulnerability in portal service (Magical Flaw #2023-XXXX)
   2. Sigil theft using memory scraping spell

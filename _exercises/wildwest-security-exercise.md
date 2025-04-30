@@ -5,6 +5,7 @@ subtitle: A Wild West-Themed Cybersecurity Tabletop Exercise
 author: joe
 ---
 # The Iron Horse Telegraph Heist
+
 ## A Wild West-Themed Cybersecurity Tabletop Exercise
 
 ## Exercise Overview
@@ -79,38 +80,45 @@ A notorious outlaw gang known as "The Black Hats" has identified the Transcontin
 
 ### Phase 1: Initial Detection (0:00-1:00)
 
-**Setting the Scene (0:00-0:10)**
+#### Setting the Scene (0:00-0:10)
+
 - Sheriff introduces the scenario as a standard day at Transcontinental Security Company
 - Teams are at their stations performing routine telegraph monitoring
 
-**Scenario 1 (0:10): Unauthorized Telegraph Activity**
+### Scenario 1 (0:10): Unauthorized Telegraph Activity
+
 - A monitoring alert shows unusual telegraph activity from an unregistered station
 - The telegraph key pattern matches that of a junior operator who is currently on leave visiting family in St. Louis
 - The transmissions occurred during the night when security coverage is minimal
 
 *Expected Actions:*
+
 - Investigate the telegraph alert
 - Check operator's whereabouts via messenger
 - Review transmission origin and patterns
 - Begin documenting the incident in the company ledger
 
-**Scenario 2 (0:30): Discovery of Suspicious Communications**
+### Scenario 2 (0:30): Discovery of Suspicious Communications
+
 - The compromised telegraph line has been sending unusual inquiries
 - Messages focused on gathering information about bank connections, particularly for Wells & Fargo and Union Pacific
 - Several attempts to gain additional access to secure telegraph lines were detected
 
 *Expected Actions:*
+
 - Escalate the incident to senior team members
 - Consider isolating potentially affected telegraph lines
 - Begin preparing initial client communication if necessary
 - Start assembling a rapid response team
 
-**Scenario 3 (0:45): Information Theft Detection**
+### Scenario 3 (0:45): Information Theft Detection
+
 - An alert operator identifies potential message interception equipment installed on a telegraph pole
 - The equipment appears to have been installed using insider knowledge
 - Initial evidence suggests sensitive data about client schedules and shipments may have been intercepted
 
 *Expected Actions:*
+
 - Activate formal security response procedures
 - Assign roles and responsibilities to team members
 - Begin deeper investigation
@@ -118,34 +126,40 @@ A notorious outlaw gang known as "The Black Hats" has identified the Transcontin
 
 ### Phase 2: Escalation (1:00-2:00)
 
-**Scenario 4 (1:00): Client Alert - Wells & Fargo**
+### Scenario 4 (1:00): Client Alert - Wells & Fargo
+
 - Wells & Fargo security division sends an urgent message reporting suspicious activities
 - They've detected unusual inquiries coming from a telegraph line associated with Transcontinental's management
 - The inquiries appear to be targeting their gold shipment schedules
 
 *Expected Actions:*
+
 - Acknowledge the potential connection to the earlier compromise
 - Collaborate with the client's security team
 - Investigate potential connection between Transcontinental lines and client communications
 - Update incident documentation and escalate internally
 
-**Scenario 5 (1:20): Counterfeiting Detection**
+### Scenario 5 (1:20): Counterfeiting Detection
+
 - Analysis of the compromised telegraph lines reveals sophisticated forgery of telegraph signatures
 - The forgeries provide persistent access and are difficult to detect
 - Evidence shows the forgeries have been present for approximately 30 days, slowly gathering information
 
 *Expected Actions:*
+
 - Perform detailed analysis of telegraph signatures
 - Begin investigating how the forgeries began and initial compromise
 - Consider implications for other systems and client companies
 - Update incident response team and executive level
 
-**Scenario 6 (1:40): Cover-up Attempt**
+### Scenario 6 (1:40): Cover-up Attempt
+
 - The gang begins removing evidence and altering telegraph logs
 - Attempts to modify monitoring practices to avoid future detection are observed
 - A plan to derail a train carrying security personnel is discovered but not yet executed
 
 *Expected Actions:*
+
 - Take steps to preserve evidence before it's destroyed
 - Implement additional monitoring to track gang movements
 - Consider telegraph line isolation measures
@@ -153,34 +167,40 @@ A notorious outlaw gang known as "The Black Hats" has identified the Transcontin
 
 ### Phase 3: Crisis Management (2:00-3:00)
 
-**Scenario 7 (2:00): Critical Infrastructure Alert**
+### Scenario 7 (2:00): Critical Infrastructure Alert
+
 - Union Pacific reports unusual telegraph transmissions to their train control operations
 - The transmissions are coming from trusted Transcontinental monitoring stations
 - Union Pacific has cut telegraph connections to Transcontinental as a precaution
 
 *Expected Actions:*
+
 - Acknowledge the severity of the situation
 - Implement crisis communication procedures
 - Coordinate with Union Pacific's security division
 - Prepare for potential legal reporting requirements and business fallout
 
-**Scenario 8 (2:20): Executive Involvement**
+### Scenario 8 (2:20): Executive Involvement
+
 - Transcontinental's Company President demands an immediate briefing on the situation
 - Several other client companies have begun sending urgent inquiries
 - Newspapers across the frontier have begun circulating rumors about a major security breach
 
 *Expected Actions:*
+
 - Prepare a concise executive summary
 - Organize information for efficient decision-making
 - Advise on potential public relations strategies
 - Continue technical response activities
 
-**Scenario 9 (2:40): Ransom Demand**
+### Scenario 9 (2:40): Ransom Demand
+
 - A ransom letter arrives by courier to several company offices
 - The Black Hats claim to have intercepted client data and threaten to use it for robberies
 - They demand $50,000 in gold coins within 48 hours
 
 *Expected Actions:*
+
 - Document the ransom demand
 - Assess legitimacy of the gang's claims
 - Discuss potential response options with leadership
@@ -189,34 +209,40 @@ A notorious outlaw gang known as "The Black Hats" has identified the Transcontin
 
 ### Phase 4: Resolution and Recovery (3:00-4:00)
 
-**Scenario 10 (3:00): Gang Tactics Identified**
+### Scenario 10 (3:00): Gang Tactics Identified
+
 - Investigation reveals the complete attack method and techniques used
 - Evidence points to The Black Hats with suspected insider assistance
 - A vulnerability in the telegraph relay system is identified as the initial entry point
 
 *Expected Actions:*
+
 - Document all findings for post-incident analysis
 - Develop a comprehensive remediation plan
 - Prioritize critical security gaps for immediate fixing
 - Prepare technical details for affected client companies
 
-**Scenario 11 (3:20): Containment Decision Point**
+### Scenario 11 (3:20): Containment Decision Point
+
 - The incident response team must decide on final containment actions
 - Options include temporary shutdown of the telegraph network vs. selective monitoring
 - Each option has different impacts on service delivery, company reputation, and recovery time
 
 *Expected Actions:*
+
 - Evaluate pros and cons of each option
 - Make a decision based on risk assessment
 - Communicate the decision and rationale to stakeholders
 - Begin implementing the chosen approach
 
-**Scenario 12 (3:40): Recovery Planning**
+### Scenario 12 (3:40): Recovery Planning
+
 - With the immediate threat contained, focus shifts to recovery
 - Multiple client companies are demanding detailed incident reports
 - Legal authorities and business partners are awaiting explanations
 
 *Expected Actions:*
+
 - Develop a prioritized recovery sequence
 - Create a communication plan for different stakeholders
 - Prepare initial legal notifications
@@ -325,6 +351,7 @@ A notorious outlaw gang known as "The Black Hats" has identified the Transcontin
 ## Appendix: Detailed Technical Scenarios
 
 ### Technical Details for Scenario 1
+
 - Operator Name: James Wilson
 - Telegraph Line Origin: Twin Buttes Junction (unregistered relay point)
 - Timestamp: 3:27 AM
@@ -332,17 +359,21 @@ A notorious outlaw gang known as "The Black Hats" has identified the Transcontin
 - Failed attempts: None (successful on first try, indicating insider knowledge)
 
 ### Technical Details for Scenario 2
+
 - Telegraph inquiries sent:
+
   ```
   REQUEST DETAILS STOP BANKS LOCATIONS PRIORITY HIGH STOP
   REQUEST GOLD SHIPMENT SCHEDULE WELLS FARGO STOP
   REQUEST PERSONNEL ROSTER SECURITY DIVISION STOP
   ```
+
 - Access escalation attempt:
   - Use of telegraph supervisor override codes
   - Attempt to add unauthorized telegraph key pattern to secure communications
 
 ### Technical Details for Scenario 3
+
 - Interception equipment details:
   - Type: Modified Wheatstone bridge device
   - Location: Telegraph pole #42, three miles east of Diamond Creek Station
@@ -350,6 +381,7 @@ A notorious outlaw gang known as "The Black Hats" has identified the Transcontin
   - Information accessed: Client schedules, shipment manifests, security patrol routes
 
 ### Technical Details for Scenario 5
+
 - Forgery characteristics:
   - Custom-built telegraph key modifications to mimic authorized operators
   - Uses unique break patterns in Morse code for authentication
@@ -361,6 +393,7 @@ A notorious outlaw gang known as "The Black Hats" has identified the Transcontin
     - Fort Lincoln Message Center
 
 ### Technical Details for Scenario 7
+
 - Union Pacific control attempts:
   - Target systems: Train scheduling and switching operations
   - Access attempts using legitimate Transcontinental service codes
@@ -368,7 +401,9 @@ A notorious outlaw gang known as "The Black Hats" has identified the Transcontin
   - Source: Transcontinental monitoring station at Copper Junction
 
 ### Technical Details for Scenario 9
+
 - Ransom letter text:
+
   ```
   TO THE TRANSCONTINENTAL SECURITY COMPANY:
   
@@ -389,6 +424,7 @@ A notorious outlaw gang known as "The Black Hats" has identified the Transcontin
   ```
 
 ### Technical Details for Scenario 10
+
 - Attack method:
   1. Initial access via compromised telegraph relay at Twin Buttes Junction
   2. Telegraph key pattern theft using modified equipment
